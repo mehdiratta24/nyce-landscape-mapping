@@ -40,7 +40,6 @@ export function ProposalRow({
 }) {
   const router = useRouter();
   const [open, setOpen] = useState(false);
-  const [rejectMode, setRejectMode] = useState(false);
   const [adminNote, setAdminNote] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [pending, startTransition] = useTransition();
