@@ -4,15 +4,13 @@ import { getAllOrganizations, getOrganizationById } from "@/lib/data";
 import { SECTOR_DEF } from "@/lib/constants";
 import { hostFromUrl, timeAgo } from "@/lib/utils";
 
-export function generateStaticParams() {
-  return getAllOrganizations({ includeAll: true }).map((o) => ({ id: o.id }));
-}
+export const dynamic = "force-dynamic";
 
-export default function OrgDetail({ params }: { params: { id: string } }) {
-  const org = getOrganizationById(params.id);
+export default async function OrgDetail({ params }: { params: { id: string } }) {
+  const org = await getOrganizationById(params.id);
   if (!org) notFound();
 
-  const all = getAllOrganizations();
+  const all = await getAllOrganizations();
   const partners = org.partners
     .map((pid) => all.find((o) => o.id === pid))
     .filter((x): x is NonNullable<typeof x> => Boolean(x));
@@ -201,13 +199,12 @@ export default function OrgDetail({ params }: { params: { id: string } }) {
               </div>
             </div>
 
-            <button
-              disabled
-              title="Edit proposals ship with the next release"
-              className="w-full rounded-full border border-dashed border-nyce-line bg-white py-3 text-sm text-nyce-muted cursor-not-allowed font-medium"
+            <Link
+              href={`/directory/${org.id}/edit`}
+              className="block text-center w-full rounded-full bg-nyce-accent text-white py-3 text-sm hover:bg-nyce-accentDark transition-colors font-medium"
             >
-              Request edit (coming soon)
-            </button>
+              Propose an edit →
+            </Link>
           </aside>
         </div>
       </article>

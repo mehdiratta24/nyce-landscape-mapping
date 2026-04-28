@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Onest, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { getSession } from "@/lib/supabase/auth";
 
 const onest = Onest({
   subsets: ["latin"],
@@ -21,9 +22,10 @@ export const metadata: Metadata = {
     "A shared map of organizations preserving, rescuing, and stewarding public climate and environmental data. An initiative of The New York Climate Exchange.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const session = await getSession();
   return (
     <html lang="en" className={`${onest.variable} ${mono.variable}`}>
       <body className="antialiased min-h-screen flex flex-col font-sans text-nyce-ink">
@@ -35,6 +37,7 @@ export default function RootLayout({
             <nav className="flex items-center gap-1 text-sm font-medium">
               <NavLink href="/directory">Directory</NavLink>
               <NavLink href="/resources">Resources</NavLink>
+              {session.isAdmin && <NavLink href="/admin">Admin</NavLink>}
               <a
                 href="https://www.nyclimateexchange.org/"
                 target="_blank"

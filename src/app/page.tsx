@@ -3,8 +3,8 @@ import { CAPABILITIES, DATASET_DOMAINS, SECTORS } from "@/lib/constants";
 import { getAllOrganizations } from "@/lib/data";
 import { OverlapMatrix } from "@/components/OverlapMatrix";
 
-export default function Home() {
-  const orgs = getAllOrganizations();
+export default async function Home() {
+  const orgs = await getAllOrganizations();
   const countBySector = orgs.reduce<Record<string, number>>((acc, o) => {
     acc[o.sector] = (acc[o.sector] || 0) + 1;
     return acc;

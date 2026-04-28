@@ -2,6 +2,7 @@
 
 import { useMemo } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import Link from "next/link";
 import Papa from "papaparse";
 import Fuse from "fuse.js";
 import type {
@@ -27,7 +28,13 @@ function parseMulti(v: string | null): string[] {
   return v ? v.split(",").filter(Boolean) : [];
 }
 
-export function DirectoryView({ orgs }: { orgs: Organization[] }) {
+export function DirectoryView({
+  orgs,
+  isAdmin = false,
+}: {
+  orgs: Organization[];
+  isAdmin?: boolean;
+}) {
   const router = useRouter();
   const params = useSearchParams();
 
@@ -154,6 +161,22 @@ export function DirectoryView({ orgs }: { orgs: Organization[] }) {
               </button>
             ))}
           </div>
+
+          <Link
+            href="/directory/new"
+            className="px-4 py-2 rounded-full border border-nyce-line bg-white text-sm hover:border-nyce-accent/50 hover:text-nyce-accent transition-colors inline-flex items-center gap-1.5 font-medium"
+          >
+            <span aria-hidden>+</span> Propose org
+          </Link>
+
+          {isAdmin && (
+            <Link
+              href="/admin/bulk-upload"
+              className="px-4 py-2 rounded-full border border-nyce-accent bg-nyce-accentSoft text-nyce-accent text-sm hover:bg-nyce-accent hover:text-white transition-colors inline-flex items-center gap-1.5 font-medium"
+            >
+              Bulk upload
+            </Link>
+          )}
 
           <button
             onClick={() => exportCsv(filtered)}

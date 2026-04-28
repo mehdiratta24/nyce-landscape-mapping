@@ -33,7 +33,35 @@ npm run dev          # start on http://localhost:3000
 
 - **Phase 0** — data prep ✓
 - **Phase 1** — read-only directory ✓
-- **Phase 2** — admin auth, edit-proposal queue, bulk upload (planned)
+- **Phase 2** — Supabase backend, edit proposals, admin auth, review queue, bulk upload ✓
 - **Phase 3** — dataset landscape pages (planned)
 
 See `SPEC.md` for full scope.
+
+## Phase 2 setup (Supabase)
+
+The app falls back to the static JSON seed if Supabase env vars are not present, so Phase 1 keeps working out of the box. To enable edit proposals, admin auth, and bulk upload:
+
+1. **Create a project** at https://supabase.com (free tier is fine).
+2. **Apply the schema.** Open Supabase dashboard → SQL Editor → paste the contents of `supabase/migrations/0001_init.sql` → Run.
+3. **Add admin emails.** In the SQL editor:
+   ```sql
+   insert into public.admin_users (email) values ('you@nyclimateexchange.org');
+   ```
+4. **Configure env vars.** Copy `.env.example` to `.env.local` and fill in:
+   - `NEXT_PUBLIC_SUPABASE_URL`
+   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+   - `SUPABASE_SERVICE_ROLE_KEY` (only needed for the seed step below — keep secret)
+5. **Seed the database** with the Phase 0 organizations:
+   ```bash
+   npm run seed:supabase
+   ```
+6. **Restart the dev server.** The app will now read/write through Supabase.
+
+For Vercel: add only `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` to the project's environment variables. Do **not** add the service role key to Vercel.
+
+### Magic-link redirect URLs
+
+In the Supabase dashboard → Authentication → URL Configuration, add:
+- `http://localhost:3000/admin/auth/callback` (dev)
+- `https://your-prod-domain/admin/auth/callback` (prod)
