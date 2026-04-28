@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Climate Data Landscape
 
-## Getting Started
+A directory of organizations engaged in the preservation and stewardship of public climate data. Maintained by the New York Climate Exchange as part of the Climate Data Stewardship initiative.
 
-First, run the development server:
+> Working document · v0.1 · read-only preview
+
+## What's in this repo
+
+- **`src/app/`** — Next.js 14 App Router pages: home, directory (grid / table / coverage matrix views), org detail, resources.
+- **`src/components/`** — `OrgCard`, `OrgTable`, `DirectoryView`, `OverlapMatrix`.
+- **`src/lib/`** — types, controlled vocabularies, data layer.
+- **`data/raw/`** — source CSVs (`organizations.csv`, `sector_mapping.csv`).
+- **`data/organizations.json`** — canonical seed produced by the build script.
+- **`scripts/build-seed.ts`** — Phase 0 data prep: applies sector mapping, merges duplicates, normalizes vocabulary, runs partner auto-extraction.
+- **`SPEC.md`** — full build specification (phases 0–3).
+
+## Running locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run build:seed   # rebuild data/organizations.json from data/raw/*.csv
+npm run dev          # start on http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js 14 (App Router) · TypeScript · Tailwind CSS
+- Onest (display) · Inter (body) · JetBrains Mono — via `next/font/google`
+- `papaparse` for CSV, `fuse.js` for client-side fuzzy search
+- Static JSON seed for v0.1; Supabase wiring planned for Phase 2
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Build phases
 
-## Learn More
+- **Phase 0** — data prep ✓
+- **Phase 1** — read-only directory ✓
+- **Phase 2** — admin auth, edit-proposal queue, bulk upload (planned)
+- **Phase 3** — dataset landscape pages (planned)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+See `SPEC.md` for full scope.

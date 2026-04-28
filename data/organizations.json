@@ -1,0 +1,661 @@
+[
+  {
+    "id": "1",
+    "name": "End of Term Archive",
+    "url": "https://eotarchive.org/",
+    "description": "The main coordinated effort to save U.S. Government websites at the end of presidential administrations. Focuses on websites and datasets.",
+    "sector": "preservation_effort",
+    "organization_type": "academic",
+    "engagement_status": "active",
+    "capabilities": [],
+    "dataset_domains": [
+      "Government"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": null,
+    "contact_email": null,
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:19:52.698Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "2",
+    "name": "Environmental Data & Governance Initiative (EDGI)",
+    "url": "https://envirodatagov.org/",
+    "description": "A research collaborative promoting evidence-based policy-making and public interest science. Focused on environmental data.",
+    "sector": "academia_research",
+    "organization_type": "academic",
+    "engagement_status": "active",
+    "capabilities": [],
+    "dataset_domains": [
+      "Environmental"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": null,
+    "contact_email": null,
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:19:52.712Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "4",
+    "name": "Harvard’s Library Innovation Lab Team",
+    "url": "https://lil.law.harvard.edu/blog/2025/01/30/preserving-public-u-s-federal-data/",
+    "description": "A team working on preserving public U.S. federal data, including an archive of data.gov on Source Cooperative.",
+    "sector": "academia_research",
+    "organization_type": "academic",
+    "engagement_status": "active",
+    "capabilities": [],
+    "dataset_domains": [
+      "Government"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": null,
+    "contact_email": null,
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:19:52.720Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "5",
+    "name": "ICPSR",
+    "url": "https://www.icpsr.umich.edu/web/pages/",
+    "description": "An international consortium providing leadership and training in data access, curation, and methods of analysis for the social science research community.",
+    "sector": "data_platform",
+    "organization_type": "academic",
+    "engagement_status": "active",
+    "capabilities": [],
+    "dataset_domains": [
+      "Social Science"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": null,
+    "contact_email": null,
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:19:52.723Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "6",
+    "name": "IPUMS",
+    "url": "https://www.ipums.org/",
+    "description": "Provides census and survey data from around the world integrated across time and space. Includes major US government data sources.",
+    "sector": "data_platform",
+    "organization_type": "academic",
+    "engagement_status": "active",
+    "capabilities": [],
+    "dataset_domains": [
+      "Social Science",
+      "Government"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": null,
+    "contact_email": null,
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:19:52.726Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "7",
+    "name": "Dryad",
+    "url": "https://datadryad.org/",
+    "description": "A generalist repository available to help with data publication, storage, and preservation.",
+    "sector": "data_platform",
+    "organization_type": "nonprofit",
+    "engagement_status": "active",
+    "capabilities": [],
+    "dataset_domains": [
+      "Climate",
+      "Environmental",
+      "Government"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": null,
+    "contact_email": null,
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:19:52.729Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "8",
+    "name": "Webrecorder",
+    "url": "https://webrecorder.net/",
+    "description": "Open source solutions to preserve modern, interactive websites exactly as they appear.",
+    "sector": "data_platform",
+    "organization_type": "nonprofit",
+    "engagement_status": "active",
+    "capabilities": [],
+    "dataset_domains": [
+      "Government"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": null,
+    "contact_email": null,
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:19:52.732Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "9",
+    "name": "Wayback Machine",
+    "url": "https://web.archive.org/",
+    "description": "An initiative of the Internet Archive building a digital library of Internet sites and other cultural artifacts in digital form.",
+    "sector": "data_platform",
+    "organization_type": "nonprofit",
+    "engagement_status": "active",
+    "capabilities": [],
+    "dataset_domains": [
+      "Government"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": null,
+    "contact_email": null,
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:19:52.736Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "10",
+    "name": "America's Essential Data",
+    "url": "https://essentialdata.us/",
+    "description": "Collaborative effort dedicated to documenting the value that data produced by the federal government provides for American lives.",
+    "sector": "preservation_effort",
+    "organization_type": "nonprofit",
+    "engagement_status": "active",
+    "capabilities": [],
+    "dataset_domains": [
+      "Government"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": null,
+    "contact_email": null,
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:19:52.739Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "11",
+    "name": "Policy Commons Open Collection",
+    "url": "https://coherentdigital.net/open-2025",
+    "description": "Initiative to identify, preserve, and make available government materials at risk of disappearing.",
+    "sector": "preservation_effort",
+    "organization_type": "nonprofit",
+    "engagement_status": "active",
+    "capabilities": [],
+    "dataset_domains": [
+      "Government"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": null,
+    "contact_email": null,
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:19:52.741Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "12",
+    "name": "Stanford’s Big Local News",
+    "url": "http://cjlab.stanford.edu/projects/big-local-news/",
+    "description": "Produces the Federal data collection collaborative and helps with data liberation.",
+    "sector": "academia_research",
+    "organization_type": "academic",
+    "engagement_status": "active",
+    "capabilities": [],
+    "dataset_domains": [
+      "Government"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": null,
+    "contact_email": null,
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:19:52.744Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "13",
+    "name": "Data Liberation Project",
+    "url": "https://www.data-liberation-project.org/",
+    "description": "Run by BigLocalNews and MuckRock, focused on liberating government data.",
+    "sector": "preservation_effort",
+    "organization_type": "nonprofit",
+    "engagement_status": "active",
+    "capabilities": [],
+    "dataset_domains": [
+      "Government"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": null,
+    "contact_email": null,
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:19:52.747Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "14",
+    "name": "Silencing Science Tracker",
+    "url": "https://climate.law.columbia.edu/Silencing-Science-Tracker",
+    "description": "Tracks government attempts to restrict scientific research, education, or discussion.",
+    "sector": "academia_research",
+    "organization_type": "academic",
+    "engagement_status": "active",
+    "capabilities": [],
+    "dataset_domains": [
+      "Government"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": null,
+    "contact_email": null,
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:19:52.750Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "15",
+    "name": "The LGBTQ+ Archive",
+    "url": "https://www.thelgbtqarchive.org/",
+    "description": "Independent effort to preserve and make accessible information on health, legal rights, and safety for the LGBTQ+ community.",
+    "sector": "preservation_effort",
+    "organization_type": "independent",
+    "engagement_status": "active",
+    "capabilities": [],
+    "dataset_domains": [
+      "Social Science"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": null,
+    "contact_email": null,
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:19:52.752Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "16",
+    "name": "American Geophysical Union (AGU)",
+    "url": "https://www.agu.org/",
+    "description": "AGU highlights impactful datasets supporting research and decision making. Recently awarded a grant to convene the community for data resilience efforts.",
+    "sector": "academia_research",
+    "organization_type": "nonprofit",
+    "engagement_status": "active",
+    "capabilities": [
+      "Surfaces Priority Datasets",
+      "Assesses Risk to Datasets"
+    ],
+    "dataset_domains": [
+      "Climate",
+      "Environmental"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": "Shelley Stall",
+    "contact_email": "SStall@agu.org",
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:22:49.188Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "17",
+    "name": "Climate-Ocean Data Action Network (CDAN)",
+    "url": "https://doi.org/10.5281/zenodo.17203996",
+    "description": "Informal coalition developing open guidance for safeguarding ocean-climate data and prioritizing preservation.",
+    "sector": "preservation_effort",
+    "organization_type": "nonprofit",
+    "engagement_status": "active",
+    "capabilities": [
+      "Assesses Risk to Datasets",
+      "Proposes Proxy / Alternative Datasets"
+    ],
+    "dataset_domains": [
+      "Climate"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": "Kate Wing",
+    "contact_email": "kate@intertidal.agency",
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:22:49.194Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "18",
+    "name": "Data Foundation - Climate Data Collaborative",
+    "url": "http://climatedatacollaborative.org",
+    "description": "Connects stakeholders to make climate and environmental data work better. Includes the GHG Coalition for U.S. GHG measurement.",
+    "sector": "preservation_effort",
+    "organization_type": "nonprofit",
+    "engagement_status": "active",
+    "capabilities": [
+      "Surfaces Priority Datasets"
+    ],
+    "dataset_domains": [
+      "Greenhouse Gas",
+      "Climate",
+      "Environmental"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": "Sonia Wang",
+    "contact_email": "sonia.wang@datafoundation.org",
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:22:49.197Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "19",
+    "name": "Group on Reference Quality Data sets (GRQDs)",
+    "url": "https://www.spglobal.com/",
+    "description": "Focused on strategies for identifying and preserving at-risk Reference Quality Data sets that underpin climate science.",
+    "sector": "preservation_effort",
+    "organization_type": "company",
+    "engagement_status": "active",
+    "capabilities": [
+      "Assesses Risk to Datasets",
+      "Surfaces Priority Datasets"
+    ],
+    "dataset_domains": [
+      "Climate"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": "Tom Karl",
+    "contact_email": "thomas.karl@spglobal.com",
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:22:49.200Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "20",
+    "name": "Keeling Curve Foundation (KCF)",
+    "url": "https://keelingcurve.org/",
+    "description": "Identifies priority long-term Earth system observations and established the Data Continuity Initiative for funding.",
+    "sector": "preservation_effort",
+    "organization_type": "nonprofit",
+    "engagement_status": "active",
+    "capabilities": [
+      "Surfaces Priority Datasets",
+      "Assesses Risk to Datasets"
+    ],
+    "dataset_domains": [
+      "Climate"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": "Ralph Keeling",
+    "contact_email": "ralph@keelingcurve.org",
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:22:49.204Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "21",
+    "name": "National Academies (NASEM) Earth Obs Workshop",
+    "url": "https://www.nationalacademies.org/",
+    "description": "Convenes community to exchange ideas on enhancing coordination and governance for Earth observations.",
+    "sector": "academia_research",
+    "organization_type": "nonprofit",
+    "engagement_status": "active",
+    "capabilities": [
+      "Assesses Risk to Datasets"
+    ],
+    "dataset_domains": [
+      "Climate"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": "Steven Stichter",
+    "contact_email": "SStichter@nas.edu",
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:22:49.246Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "22",
+    "name": "Cornerstone Data Initiative",
+    "url": "http://cornerstonedata.org",
+    "description": "Maintains and merges USEEIO and CEDA models for corporate carbon accounting globally.",
+    "sector": "data_platform",
+    "organization_type": "academic",
+    "engagement_status": "active",
+    "capabilities": [
+      "Archives and/or Mirrors",
+      "Proposes Proxy / Alternative Datasets"
+    ],
+    "dataset_domains": [
+      "Greenhouse Gas",
+      "Environmental"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": "Dr. Wesley Ingwersen",
+    "contact_email": "ingwersw@stanford.edu",
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:22:49.267Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "23",
+    "name": "FracTracker (Federal Accountability)",
+    "url": "https://fractracker.org/",
+    "description": "Supports communities investigating risks and documenting harms of oil and gas operations with data and mapping.",
+    "sector": "preservation_effort",
+    "organization_type": "nonprofit",
+    "engagement_status": "active",
+    "capabilities": [
+      "Archives and/or Mirrors",
+      "Assesses Risk to Datasets"
+    ],
+    "dataset_domains": [
+      "Environmental"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": "Shannon Smith",
+    "contact_email": "smith@fractracker.org",
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:22:49.271Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "24",
+    "name": "Environmental & Health Data & Analysis Trust",
+    "url": "https://ehdat.org/",
+    "description": "Meets critical analytical needs of state and local agencies related to environmental and health impacts.",
+    "sector": "data_platform",
+    "organization_type": "nonprofit",
+    "engagement_status": "active",
+    "capabilities": [
+      "Archives and/or Mirrors",
+      "Proposes Proxy / Alternative Datasets"
+    ],
+    "dataset_domains": [
+      "Environmental"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": "Sam Kay",
+    "contact_email": "sam@ehdat.org",
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:22:49.275Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "25",
+    "name": "New York Climate Exchange (NYCE)",
+    "url": "https://nyclimateexchange.org/",
+    "description": "Launched Climate Data Stewardship initiative to preserve and activate federal climate data.",
+    "sector": "preservation_effort",
+    "organization_type": "nonprofit",
+    "engagement_status": "active",
+    "capabilities": [
+      "Archives and/or Mirrors",
+      "Surfaces Priority Datasets"
+    ],
+    "dataset_domains": [
+      "Climate"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": "Andel Koester",
+    "contact_email": "akoester@nyclimateexchange.org",
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:22:49.279Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "26",
+    "name": "Public Environmental Data Partners (PEDP)",
+    "url": "https://openenvironmentaldata.org/",
+    "description": "Coalition mission to preserve, protect, and expand public access to climate and environmental data.",
+    "sector": "preservation_effort",
+    "organization_type": "nonprofit",
+    "engagement_status": "active",
+    "capabilities": [
+      "Archives and/or Mirrors",
+      "Surfaces Priority Datasets",
+      "Assesses Risk to Datasets"
+    ],
+    "dataset_domains": [
+      "Climate",
+      "Environmental"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": "Brittany Janis",
+    "contact_email": "brittany@openenvironmentaldata.org",
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:22:49.284Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "27",
+    "name": "The Data Rescue Project",
+    "url": "https://www.datarescueproject.org/",
+    "description": "Clearinghouse for at-risk U.S. government data, coordinating gathering, cleaning, and cataloging.",
+    "sector": "preservation_effort",
+    "organization_type": "nonprofit",
+    "engagement_status": "active",
+    "capabilities": [
+      "Archives and/or Mirrors",
+      "Surfaces Priority Datasets"
+    ],
+    "dataset_domains": [
+      "Government"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": "Lynda Kellam",
+    "contact_email": "lyndamk@gmail.com",
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:22:49.287Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "28",
+    "name": "Climate.us",
+    "url": "http://climate.us",
+    "description": "Successor to climate.gov, delivering climate data and information in accessible ways.",
+    "sector": "data_platform",
+    "organization_type": "nonprofit",
+    "engagement_status": "active",
+    "capabilities": [
+      "Archives and/or Mirrors"
+    ],
+    "dataset_domains": [
+      "Climate"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": "Rebecca Lindsey",
+    "contact_email": "rlindsey@climate.us",
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:22:49.290Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "29",
+    "name": "CODE (Center for Open Data Enterprise)",
+    "url": "https://policycommons.net/",
+    "description": "Advancing open government data through cross-sector convenings and partnerships.",
+    "sector": "preservation_effort",
+    "organization_type": "nonprofit",
+    "engagement_status": "active",
+    "capabilities": [
+      "Surfaces Priority Datasets"
+    ],
+    "dataset_domains": [
+      "Government"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": "Joel Gurin",
+    "contact_email": "joel@odenterprise.org",
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:22:49.293Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  },
+  {
+    "id": "30",
+    "name": "The Impact Project",
+    "url": "https://theimpactproject.org/",
+    "description": "Nonpartisan data platform building tools to demonstrate the importance of public service.",
+    "sector": "preservation_effort",
+    "organization_type": "nonprofit",
+    "engagement_status": "active",
+    "capabilities": [
+      "Surfaces Priority Datasets",
+      "Proposes Proxy / Alternative Datasets"
+    ],
+    "dataset_domains": [
+      "Government"
+    ],
+    "partners": [],
+    "datasets_of_focus": [],
+    "contact_name": "Abby Andre",
+    "contact_email": "abby@theimpactproject.org",
+    "logo_url": null,
+    "is_verified": false,
+    "created_at": "2026-01-12T17:22:49.298Z",
+    "last_updated": "2026-01-12T18:56:36.947Z"
+  }
+]

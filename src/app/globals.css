@@ -3,25 +3,50 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #F7F8F9;
+  --fg: #0A1117;
+  --muted: #5B6A74;
+  --border: #E2E6EA;
+  --card: #FFFFFF;
+  --accent: #15506C;
+  --yellow: #FFCA00;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html, body {
+  background: var(--bg);
+  color: var(--fg);
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-feature-settings: "ss01";
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--yellow);
+  color: var(--fg);
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .text-balance { text-wrap: balance; }
+  .text-pretty { text-wrap: pretty; }
+  .grid-paper {
+    background-image:
+      linear-gradient(to right, rgba(10,17,23,0.035) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(10,17,23,0.035) 1px, transparent 1px);
+    background-size: 32px 32px;
   }
+}
+
+.reveal {
+  animation: fade-up 0.6s ease-out both;
+}
+.reveal-delay-1 { animation-delay: 0.05s; }
+.reveal-delay-2 { animation-delay: 0.1s; }
+.reveal-delay-3 { animation-delay: 0.15s; }
+.reveal-delay-4 { animation-delay: 0.2s; }
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
 }

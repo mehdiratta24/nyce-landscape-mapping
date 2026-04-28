@@ -1,0 +1,37 @@
+[
+  {
+    "group": "Preservation Networks",
+    "links": [
+      { "label": "Public Environmental Data Partners (PEDP)", "url": "https://openenvironmentaldata.org/", "note": "Largest coalition — preserve, protect, and expand public access to climate/environmental data." },
+      { "label": "The Data Rescue Project", "url": "https://www.datarescueproject.org/", "note": "Clearinghouse coordinating gathering, cleaning, and cataloging of at-risk federal data." },
+      { "label": "End of Term Archive", "url": "https://eotarchive.org/", "note": "Coordinated effort to save U.S. government websites at administration transitions." },
+      { "label": "Policy Commons Open Collection", "url": "https://coherentdigital.net/open-2025", "note": "Preserving government materials at risk of disappearing." }
+    ]
+  },
+  {
+    "group": "Data Platforms & Repository Hosts",
+    "links": [
+      { "label": "Wayback Machine", "url": "https://web.archive.org/" },
+      { "label": "Webrecorder", "url": "https://webrecorder.net/" },
+      { "label": "Dryad", "url": "https://datadryad.org/" },
+      { "label": "ICPSR", "url": "https://www.icpsr.umich.edu/" },
+      { "label": "IPUMS", "url": "https://www.ipums.org/" }
+    ]
+  },
+  {
+    "group": "Portals",
+    "links": [
+      { "label": "Climate Program Portal", "url": "https://climate.us", "note": "Successor to climate.gov." },
+      { "label": "PEDP Harvard Dataverse", "url": "https://dataverse.harvard.edu/", "note": "Preservation network's dataset landing pages." }
+    ]
+  },
+  {
+    "group": "Federal Agencies",
+    "links": [
+      { "label": "NASA", "url": "https://www.nasa.gov/" },
+      { "label": "NOAA", "url": "https://www.noaa.gov/" },
+      { "label": "EPA", "url": "https://www.epa.gov/" },
+      { "label": "NCAR", "url": "https://ncar.ucar.edu/" }
+    ]
+  }
+]
