@@ -86,23 +86,19 @@ export async function submitProposalAction(formData: FormData): Promise<Proposal
   };
 
   const supabase = createSupabaseServerClient();
-  const { data, error } = await supabase
-    .from("edit_proposals")
-    .insert({
-      target_org_id,
-      proposed_payload: payload,
-      proposer_email,
-      rationale,
-    })
-    .select("id")
-    .single();
+  const { data, error } = await supabase.rpc("submit_proposal", {
+    p_target_org_id: target_org_id,
+    p_proposed_payload: payload,
+    p_proposer_email: proposer_email,
+    p_rationale: rationale,
+  });
 
   if (error) {
-    console.error("[submitProposal] insert error:", error.message);
+    console.error("[submitProposal] rpc error:", error.message);
     return { ok: false, error: "Could not save proposal. Please try again." };
   }
 
-  return { ok: true, proposalId: data.id as string };
+  return { ok: true, proposalId: data as string };
 }
 
 // ──────────────────────────────────────────────────────────────────
