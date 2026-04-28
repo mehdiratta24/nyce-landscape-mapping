@@ -77,6 +77,14 @@ export default async function RootLayout({
                   nyclimateexchange.org
                 </a>
               </p>
+              <p>
+                <Link
+                  href={session.isAdmin ? "/admin" : "/admin/login"}
+                  className="text-nyce-muted hover:text-nyce-accent underline underline-offset-2"
+                >
+                  {session.isAdmin ? "Admin dashboard" : "Admin sign-in"}
+                </Link>
+              </p>
             </div>
           </div>
         </footer>
