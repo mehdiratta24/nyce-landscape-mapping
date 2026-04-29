@@ -37,7 +37,6 @@ export default async function RootLayout({
             <nav className="flex items-center gap-1 text-sm font-medium">
               <NavLink href="/directory">Directory</NavLink>
               <NavLink href="/resources">Resources</NavLink>
-              {session.isAdmin && <NavLink href="/admin">Admin</NavLink>}
               <a
                 href="https://www.nyclimateexchange.org/"
                 target="_blank"
