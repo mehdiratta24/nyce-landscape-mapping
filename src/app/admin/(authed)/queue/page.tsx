@@ -1,4 +1,4 @@
-import { createSupabaseServerClient } from "@/lib/supabase/server";
+import { createSupabaseAdminClient } from "@/lib/supabase/admin-server";
 import { ProposalRow } from "./ProposalRow";
 
 export const dynamic = "force-dynamic";
@@ -31,7 +31,7 @@ export default async function ReviewQueue({
 }: {
   searchParams: { status?: string };
 }) {
-  const supabase = createSupabaseServerClient();
+  const supabase = createSupabaseAdminClient();
   const status = (searchParams.status as ProposalRecord["status"]) || "pending";
 
   const { data: proposals } = await supabase

@@ -1,7 +1,7 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { createSupabaseServerClient } from "@/lib/supabase/server";
+import { createSupabaseAdminClient } from "@/lib/supabase/admin-server";
 
 export interface BulkRow {
   id?: string;
@@ -31,7 +31,7 @@ export async function commitBulkUploadAction(
   inserts: BulkRow[],
   updates: { id: string; row: BulkRow }[],
 ): Promise<CommitResult> {
-  const supabase = createSupabaseServerClient();
+  const supabase = createSupabaseAdminClient();
   const errors: string[] = [];
   let inserted = 0;
   let updated = 0;

@@ -41,6 +41,16 @@ export default async function AuthedAdminLayout({
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-12">
+      {session.authBypassed && (
+        <div className="mb-6 rounded-md border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-900 flex items-start gap-3">
+          <span className="text-base leading-none mt-0.5" aria-hidden>⚠</span>
+          <div>
+            <strong className="font-semibold">Auth disabled.</strong> Admin pages are open
+            to anyone with this URL. Set <code className="font-mono text-xs">AUTH_ENABLED=true</code> in
+            Vercel env to re-enable magic-link sign-in.
+          </div>
+        </div>
+      )}
       <div className="flex items-end justify-between mb-10 flex-wrap gap-4 border-b border-nyce-line pb-6">
         <div>
           <p className="text-[11px] uppercase tracking-[0.22em] text-nyce-accent mb-2 font-semibold">
@@ -52,19 +62,21 @@ export default async function AuthedAdminLayout({
             <AdminLink href="/admin/bulk-upload">Bulk upload</AdminLink>
           </nav>
         </div>
-        <div className="text-xs text-nyce-muted flex items-center gap-3">
-          <span>
-            Signed in as <strong className="text-nyce-ink">{session.user.email}</strong>
-          </span>
-          <form action={signOutAction}>
-            <button
-              type="submit"
-              className="text-nyce-accent hover:text-nyce-accentDark font-semibold underline underline-offset-2"
-            >
-              Sign out
-            </button>
-          </form>
-        </div>
+        {!session.authBypassed && (
+          <div className="text-xs text-nyce-muted flex items-center gap-3">
+            <span>
+              Signed in as <strong className="text-nyce-ink">{session.user.email}</strong>
+            </span>
+            <form action={signOutAction}>
+              <button
+                type="submit"
+                className="text-nyce-accent hover:text-nyce-accentDark font-semibold underline underline-offset-2"
+              >
+                Sign out
+              </button>
+            </form>
+          </div>
+        )}
       </div>
       {children}
     </div>

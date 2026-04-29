@@ -58,7 +58,15 @@ The app falls back to the static JSON seed if Supabase env vars are not present,
    ```
 6. **Restart the dev server.** The app will now read/write through Supabase.
 
-For Vercel: add only `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` to the project's environment variables. Do **not** add the service role key to Vercel.
+### Vercel env vars
+
+Required:
+- `NEXT_PUBLIC_SUPABASE_URL` — public, safe in the client bundle
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY` — public, safe in the client bundle
+- `SUPABASE_SERVICE_ROLE_KEY` — **server-only**. Used by admin server actions to bypass RLS. Set in Vercel without `NEXT_PUBLIC_` prefix; do not log or expose.
+
+Optional:
+- `AUTH_ENABLED` — `false` (default) opens admin pages to any visitor; `true` requires Supabase magic-link sign-in. Flip to `true` once email delivery is set up.
 
 ### Magic-link redirect URLs
 

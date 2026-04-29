@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { createSupabaseServerClient } from "@/lib/supabase/server";
+import { createSupabaseAdminClient } from "@/lib/supabase/admin-server";
 
 export const dynamic = "force-dynamic";
 
 export default async function AdminDashboard() {
-  const supabase = createSupabaseServerClient();
+  const supabase = createSupabaseAdminClient();
 
   const [{ count: pending }, { count: total }, { count: deprioritized }] = await Promise.all([
     supabase.from("edit_proposals").select("id", { count: "exact", head: true }).eq("status", "pending"),

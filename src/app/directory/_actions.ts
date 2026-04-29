@@ -2,6 +2,7 @@
 
 import { revalidatePath } from "next/cache";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
+import { createSupabaseAdminClient } from "@/lib/supabase/admin-server";
 import { isSupabaseConfigured } from "@/lib/supabase/env";
 import {
   CAPABILITIES,
@@ -110,7 +111,9 @@ export async function approveProposalAction(
   adminNote?: string,
 ): Promise<ProposalResult> {
   if (!isSupabaseConfigured()) return { ok: false, error: "Supabase not configured." };
-  const supabase = createSupabaseServerClient();
+  // Service-role client: bypasses RLS so admin writes work whether or not
+  // AUTH_ENABLED is on. Auth-gating still happens at the route + action layer.
+  const supabase = createSupabaseAdminClient();
 
   const { data: proposal, error: fetchErr } = await supabase
     .from("edit_proposals")
@@ -202,7 +205,7 @@ export async function rejectProposalAction(
 ): Promise<ProposalResult> {
   if (!isSupabaseConfigured()) return { ok: false, error: "Supabase not configured." };
   if (!adminNote.trim()) return { ok: false, error: "Reason for rejection is required." };
-  const supabase = createSupabaseServerClient();
+  const supabase = createSupabaseAdminClient();
   const { error } = await supabase
     .from("edit_proposals")
     .update({

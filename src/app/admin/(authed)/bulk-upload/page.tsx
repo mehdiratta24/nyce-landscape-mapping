@@ -1,11 +1,11 @@
-import { createSupabaseServerClient } from "@/lib/supabase/server";
+import { createSupabaseAdminClient } from "@/lib/supabase/admin-server";
 import { BulkUploader } from "./BulkUploader";
 import type { Organization } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 
 export default async function BulkUploadPage() {
-  const supabase = createSupabaseServerClient();
+  const supabase = createSupabaseAdminClient();
   const { data } = await supabase.from("organizations").select("*");
   const orgs = (data ?? []) as unknown as Organization[];
 

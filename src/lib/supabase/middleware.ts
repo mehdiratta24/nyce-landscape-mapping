@@ -1,6 +1,6 @@
 import { createServerClient, type CookieOptions } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
-import { isSupabaseConfigured } from "./env";
+import { isAuthEnabled, isSupabaseConfigured } from "./env";
 
 /**
  * Refreshes the auth cookie on every request and protects /admin/*.
@@ -8,6 +8,11 @@ import { isSupabaseConfigured } from "./env";
  */
 export async function updateSession(request: NextRequest) {
   const response = NextResponse.next({ request });
+
+  if (!isAuthEnabled()) {
+    // Auth flag off — admin pages are open. Skip the gate entirely.
+    return response;
+  }
 
   if (!isSupabaseConfigured()) {
     // Local dev without Supabase set up — let everything through.
