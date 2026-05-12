@@ -141,9 +141,19 @@ function main() {
   const existing: Array<{ id: string; name: string }> = fs.existsSync(EXISTING_JSON)
     ? (JSON.parse(fs.readFileSync(EXISTING_JSON, "utf8")) as Array<{ id: string; name: string }>)
     : [];
+  // Normalize curly quotes / dashes / whitespace so a renamed-with-a-curly-apostrophe
+  // row still matches its predecessor.
+  const normalize = (s: string) =>
+    s
+      .toLowerCase()
+      .replace(/[‘’ʼ]/g, "'")
+      .replace(/[“”]/g, '"')
+      .replace(/[–—]/g, "-")
+      .replace(/\s+/g, " ")
+      .trim();
   const existingByName = new Map<string, string>();
   for (const o of existing) {
-    existingByName.set(o.name.toLowerCase().trim(), o.id);
+    existingByName.set(normalize(o.name), o.id);
   }
   const usedIds = new Set(existing.map((o) => o.id));
   let nextNewId = (() => {
@@ -185,7 +195,7 @@ function main() {
     );
 
     // ID continuity
-    const key = name.toLowerCase().trim();
+    const key = normalize(name);
     let id = existingByName.get(key);
     if (!id) {
       while (usedIds.has(String(nextNewId))) nextNewId++;
