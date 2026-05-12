@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build:seed": "tsx scripts/build-seed.ts",
+    "import:excel": "tsx scripts/import-excel.ts",
     "seed:supabase": "tsx scripts/seed-supabase.ts"
   },
   "dependencies": {
@@ -17,7 +17,8 @@
     "next": "14.2.35",
     "papaparse": "^5.5.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/node": "^20",

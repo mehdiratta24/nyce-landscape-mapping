@@ -151,7 +151,7 @@ export function OverlapMatrix({ orgs, compact = false, interactive = true }: Pro
                   >
                     <span
                       className="h-2 w-2 rounded-full"
-                      style={{ background: SECTOR_COLOR[o.sector] }}
+                      style={{ background: SECTOR_COLOR[o.sectors[0] ?? "data_platform"] }}
                       aria-hidden
                     />
                     <span className="text-sm text-nyce-ink truncate">{o.name}</span>

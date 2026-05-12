@@ -50,13 +50,15 @@ export async function submitProposalAction(formData: FormData): Promise<Proposal
   const name = ((formData.get("name") as string) || "").trim();
   if (!name) return { ok: false, error: "Organization name is required." };
 
-  const sector = formData.get("sector") as Sector;
-  if (!VALID_SECTORS.has(sector)) {
-    return { ok: false, error: "Please select a valid sector." };
+  const sectors = (formData.getAll("sectors") as string[]).filter((s) =>
+    VALID_SECTORS.has(s as Sector),
+  ) as Sector[];
+  if (sectors.length === 0) {
+    return { ok: false, error: "Please pick at least one sector." };
   }
 
   const organization_type =
-    (formData.get("organization_type") as OrganizationType) || "independent";
+    (formData.get("organization_type") as OrganizationType) || "nonprofit";
   if (!VALID_TYPES.has(organization_type)) {
     return { ok: false, error: "Please select a valid organization type." };
   }
@@ -77,7 +79,7 @@ export async function submitProposalAction(formData: FormData): Promise<Proposal
     name,
     url: ((formData.get("url") as string) || "").trim(),
     description: ((formData.get("description") as string) || "").trim(),
-    sector,
+    sectors,
     organization_type,
     capabilities,
     dataset_domains,
@@ -129,15 +131,21 @@ export async function approveProposalAction(
 
   const payload = proposal.proposed_payload as Record<string, unknown>;
 
+  // Support both old payloads (`sector`) and new (`sectors[]`).
+  const sectors = Array.isArray(payload.sectors)
+    ? (payload.sectors as string[])
+    : payload.sector
+    ? [payload.sector as string]
+    : [];
+
   if (proposal.target_org_id) {
-    // Edit: apply diff to existing org
     const { error: updateErr } = await supabase
       .from("organizations")
       .update({
         name: payload.name,
         url: payload.url,
         description: payload.description,
-        sector: payload.sector,
+        sectors,
         organization_type: payload.organization_type,
         capabilities: payload.capabilities,
         dataset_domains: payload.dataset_domains,
@@ -150,7 +158,6 @@ export async function approveProposalAction(
       return { ok: false, error: `Failed to apply edit: ${updateErr.message}` };
     }
   } else {
-    // New org: insert. Generate a numeric-ish id.
     const { data: maxRow } = await supabase
       .from("organizations")
       .select("id")
@@ -166,7 +173,7 @@ export async function approveProposalAction(
       name: payload.name,
       url: payload.url,
       description: payload.description,
-      sector: payload.sector,
+      sectors,
       organization_type: payload.organization_type,
       capabilities: payload.capabilities,
       dataset_domains: payload.dataset_domains,

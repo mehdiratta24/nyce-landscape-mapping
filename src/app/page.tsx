@@ -6,7 +6,7 @@ import { OverlapMatrix } from "@/components/OverlapMatrix";
 export default async function Home() {
   const orgs = await getAllOrganizations();
   const countBySector = orgs.reduce<Record<string, number>>((acc, o) => {
-    acc[o.sector] = (acc[o.sector] || 0) + 1;
+    for (const s of o.sectors) acc[s] = (acc[s] || 0) + 1;
     return acc;
   }, {});
   const totalCapSlots = orgs.reduce((n, o) => n + o.capabilities.length, 0);

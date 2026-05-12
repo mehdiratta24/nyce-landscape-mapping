@@ -50,7 +50,7 @@ async function main() {
     name: o.name,
     url: o.url,
     description: o.description,
-    sector: o.sector,
+    sectors: o.sectors,
     organization_type: o.organization_type,
     engagement_status: o.engagement_status,
     capabilities: o.capabilities,

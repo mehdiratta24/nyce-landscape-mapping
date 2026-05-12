@@ -1,5 +1,5 @@
 export type Sector =
-  | "federal_producer"
+  | "data_producer"
   | "preservation_effort"
   | "data_platform"
   | "academia_research";
@@ -14,29 +14,44 @@ export type OrganizationType =
 export type EngagementStatus = "active" | "in_contact" | "deprioritized";
 
 export type Capability =
-  | "Archives and/or Mirrors"
-  | "Surfaces Priority Datasets"
-  | "Assesses Risk to Datasets"
-  | "Proposes Proxy / Alternative Datasets"
-  | "Repository Hosting"
-  | "Standards & Governance"
-  | "Convening"
-  | "Policy & Advocacy";
+  | "Data Usability & Access"
+  | "Prioritizing Data"
+  | "User Activation"
+  | "Innovation"
+  | "Community Use"
+  | "Research"
+  | "Alternative, Proxy Datasets"
+  | "Domain & Data Expertise"
+  | "Data Quality & Governance"
+  | "Coordination"
+  | "Distributed Governance & Collaboration"
+  | "Advocacy & Lobbying"
+  | "Legal Protection & Litigation"
+  | "Data Collection & Observing Systems"
+  | "Data Tools, Products & Models"
+  | "Integration with Other Data Sources"
+  | "Other Fed Data (Social, Economic, Health)";
 
 export type DatasetDomain =
-  | "Climate"
-  | "Environmental"
-  | "Greenhouse Gas"
-  | "Government"
-  | "Social Science"
-  | "Earth Observation";
+  | "Climate & Earth Science"
+  | "Greenhouse Gas & Emissions"
+  | "Energy"
+  | "Extreme Weather & Hazards"
+  | "Environmental Health & Justice"
+  | "Geospatial & Remote Sensing"
+  | "Socioeconomic";
 
 export interface Organization {
   id: string;
   name: string;
   url: string;
   description: string;
-  sector: Sector;
+  /**
+   * Multi-valued — an organization can span more than one sector
+   * (e.g. data_platform + data_producer). Empty array allowed; the first
+   * element drives the primary color treatment in the UI.
+   */
+  sectors: Sector[];
   organization_type: OrganizationType;
   engagement_status: EngagementStatus;
   capabilities: Capability[];

@@ -18,7 +18,7 @@ interface OrgRecord {
   name: string;
   url: string | null;
   description: string | null;
-  sector: string;
+  sectors: string[];
   organization_type: string;
   capabilities: string[];
   dataset_domains: string[];
@@ -47,7 +47,7 @@ export default async function ReviewQueue({
   const { data: targets } = targetIds.length
     ? await supabase
         .from("organizations")
-        .select("id, name, url, description, sector, organization_type, capabilities, dataset_domains, contact_name, contact_email")
+        .select("id, name, url, description, sectors, organization_type, capabilities, dataset_domains, contact_name, contact_email")
         .in("id", targetIds)
     : { data: [] };
 

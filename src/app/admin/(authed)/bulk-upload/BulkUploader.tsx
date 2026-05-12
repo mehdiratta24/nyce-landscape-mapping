@@ -54,12 +54,14 @@ function parseRow(raw: RawCsvRow, existing: Organization[]): ParsedRow {
   const name = (raw.name ?? "").trim();
   if (!name) errors.push("missing name");
 
-  const sector = (raw.sector ?? "").trim();
-  if (!VALID_SECTORS.has(sector as never)) {
-    errors.push(`invalid sector "${sector}"`);
+  const sectors = tryArray(raw.sectors ?? raw.sector ?? "").filter((s) =>
+    VALID_SECTORS.has(s as never),
+  );
+  if (sectors.length === 0) {
+    errors.push(`no valid sectors in "${raw.sectors ?? raw.sector ?? ""}"`);
   }
 
-  const organization_type = (raw.organization_type ?? "independent").trim() || "independent";
+  const organization_type = (raw.organization_type ?? "nonprofit").trim() || "nonprofit";
   if (!VALID_TYPES.has(organization_type as never)) {
     errors.push(`invalid organization_type "${organization_type}"`);
   }
@@ -79,7 +81,7 @@ function parseRow(raw: RawCsvRow, existing: Organization[]): ParsedRow {
     name,
     url: (raw.url ?? "").trim(),
     description: (raw.description ?? "").trim(),
-    sector,
+    sectors,
     organization_type,
     engagement_status,
     capabilities,
@@ -230,7 +232,7 @@ export function BulkUploader({ existing }: { existing: Organization[] }) {
                       <ActionTag parsed={r} />
                     </td>
                     <td className="px-3 py-2 text-nyce-ink">{r.raw.name || "—"}</td>
-                    <td className="px-3 py-2 text-nyce-muted">{r.raw.sector || "—"}</td>
+                    <td className="px-3 py-2 text-nyce-muted">{r.raw.sectors || r.raw.sector || "—"}</td>
                     <td className="px-3 py-2 text-nyce-muted">
                       {r.errors.length > 0 ? (
                         <span className="text-red-700">{r.errors.join("; ")}</span>

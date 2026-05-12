@@ -92,36 +92,28 @@ export function OrgProposalForm({ org }: Props) {
           />
         </FieldLabel>
 
-        <div className="grid sm:grid-cols-2 gap-6">
-          <FieldLabel label="Sector" required>
-            <select
-              name="sector"
-              required
-              defaultValue={org?.sector ?? ""}
-              className={inputClass}
-            >
-              <option value="">Select…</option>
-              {SECTORS.map((s) => (
-                <option key={s.value} value={s.value}>
-                  {s.label}
-                </option>
-              ))}
-            </select>
-          </FieldLabel>
-          <FieldLabel label="Organization type">
-            <select
-              name="organization_type"
-              defaultValue={org?.organization_type ?? "independent"}
-              className={inputClass}
-            >
-              {ORGANIZATION_TYPES.map((t) => (
-                <option key={t.value} value={t.value}>
-                  {t.label}
-                </option>
-              ))}
-            </select>
-          </FieldLabel>
-        </div>
+        <FieldLabel label="Sectors" required hint="An organization can belong to more than one sector.">
+          <CheckboxGroup
+            name="sectors"
+            options={SECTORS.map((s) => s.value)}
+            defaults={org?.sectors ?? []}
+            labels={Object.fromEntries(SECTORS.map((s) => [s.value, s.label]))}
+          />
+        </FieldLabel>
+
+        <FieldLabel label="Organization type">
+          <select
+            name="organization_type"
+            defaultValue={org?.organization_type ?? "nonprofit"}
+            className={inputClass}
+          >
+            {ORGANIZATION_TYPES.map((t) => (
+              <option key={t.value} value={t.value}>
+                {t.label}
+              </option>
+            ))}
+          </select>
+        </FieldLabel>
 
         <FieldLabel label="Capabilities">
           <CheckboxGroup
@@ -270,10 +262,12 @@ function CheckboxGroup({
   name,
   options,
   defaults,
+  labels,
 }: {
   name: string;
   options: readonly string[];
   defaults: readonly string[];
+  labels?: Record<string, string>;
 }) {
   return (
     <div className="flex flex-wrap gap-1.5">
@@ -294,7 +288,7 @@ function CheckboxGroup({
               defaultChecked={isDefault}
               className="sr-only"
             />
-            {o}
+            {labels?.[o] ?? o}
           </label>
         );
       })}

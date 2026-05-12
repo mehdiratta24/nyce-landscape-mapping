@@ -28,7 +28,7 @@ export function OrgTable({ orgs }: { orgs: Organization[] }) {
         case "name":
           return o.name.toLowerCase();
         case "sector":
-          return SECTOR_DEF[o.sector].label;
+          return o.sectors.map((s) => SECTOR_DEF[s].short).join(",");
         case "organization_type":
           return o.organization_type;
         case "engagement_status":
@@ -89,7 +89,7 @@ export function OrgTable({ orgs }: { orgs: Organization[] }) {
         </thead>
         <tbody>
           {sorted.map((o) => {
-            const s = SECTOR_DEF[o.sector];
+            const primary = SECTOR_DEF[o.sectors[0] ?? "data_platform"];
             return (
               <tr
                 key={o.id}
@@ -102,13 +102,15 @@ export function OrgTable({ orgs }: { orgs: Organization[] }) {
                   >
                     <span
                       className="h-2 w-2 rounded-full flex-shrink-0"
-                      style={{ background: s.color }}
+                      style={{ background: primary.color }}
                       aria-hidden
                     />
                     {o.name}
                   </Link>
                 </td>
-                <td className="px-3 py-3 text-nyce-muted">{s.short}</td>
+                <td className="px-3 py-3 text-nyce-muted">
+                  {o.sectors.map((s) => SECTOR_DEF[s].short).join(", ") || "—"}
+                </td>
                 <td className="px-3 py-3 text-nyce-muted capitalize">{o.organization_type}</td>
                 <td className="px-3 py-3 text-nyce-muted capitalize">
                   {o.engagement_status.replace("_", " ")}

@@ -23,7 +23,7 @@ interface OrgRecord {
   name: string;
   url: string | null;
   description: string | null;
-  sector: string;
+  sectors: string[];
   organization_type: string;
   capabilities: string[];
   dataset_domains: string[];
@@ -178,7 +178,7 @@ function buildDiff(current: OrgRecord, proposed: Record<string, unknown>): DiffE
     { key: "name", label: "Name" },
     { key: "url", label: "URL" },
     { key: "description", label: "Description" },
-    { key: "sector", label: "Sector" },
+    { key: "sectors", label: "Sectors" },
     { key: "organization_type", label: "Type" },
     { key: "capabilities", label: "Capabilities" },
     { key: "dataset_domains", label: "Dataset domains" },
@@ -238,7 +238,12 @@ function PayloadView({ payload }: { payload: Record<string, unknown> }) {
     { label: "Name", value: String(payload.name ?? "—") },
     { label: "URL", value: String(payload.url ?? "—") },
     { label: "Description", value: String(payload.description ?? "—") },
-    { label: "Sector", value: String(payload.sector ?? "—") },
+    {
+      label: "Sectors",
+      value: Array.isArray(payload.sectors)
+        ? (payload.sectors as string[]).join(", ") || "—"
+        : (payload.sector as string) || "—",
+    },
     { label: "Type", value: String(payload.organization_type ?? "—") },
     {
       label: "Capabilities",

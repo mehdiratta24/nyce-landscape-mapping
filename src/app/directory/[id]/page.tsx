@@ -14,7 +14,7 @@ export default async function OrgDetail({ params }: { params: { id: string } }) 
   const partners = org.partners
     .map((pid) => all.find((o) => o.id === pid))
     .filter((x): x is NonNullable<typeof x> => Boolean(x));
-  const sector = SECTOR_DEF[org.sector];
+  const primary = SECTOR_DEF[org.sectors[0] ?? "data_platform"];
 
   return (
     <div className="max-w-5xl mx-auto px-6 py-10">
@@ -27,13 +27,18 @@ export default async function OrgDetail({ params }: { params: { id: string } }) 
 
       <article className="mt-6">
         <div
-          className={`relative rounded-3xl overflow-hidden ${sector.gradient} p-8 md:p-12 text-white`}
+          className={`relative rounded-3xl overflow-hidden ${primary.gradient} p-8 md:p-12 text-white`}
         >
           <div className="absolute inset-0 grid-paper opacity-10" aria-hidden />
-          <div className="absolute top-6 right-6 flex flex-wrap gap-1.5">
-            <span className="text-[10px] uppercase tracking-wider bg-white/15 backdrop-blur-sm px-2.5 py-1 rounded-full font-semibold">
-              {sector.label}
-            </span>
+          <div className="absolute top-6 right-6 flex flex-wrap gap-1.5 justify-end max-w-[60%]">
+            {org.sectors.map((s) => (
+              <span
+                key={s}
+                className="text-[10px] uppercase tracking-wider bg-white/15 backdrop-blur-sm px-2.5 py-1 rounded-full font-semibold"
+              >
+                {SECTOR_DEF[s].label}
+              </span>
+            ))}
             {org.is_verified && (
               <span className="text-[10px] uppercase tracking-wider bg-white/15 backdrop-blur-sm px-2.5 py-1 rounded-full font-semibold">
                 Verified
@@ -100,7 +105,7 @@ export default async function OrgDetail({ params }: { params: { id: string } }) 
               {partners.length > 0 ? (
                 <div className="flex flex-wrap gap-2">
                   {partners.map((p) => {
-                    const ps = SECTOR_DEF[p.sector];
+                    const ps = SECTOR_DEF[p.sectors[0] ?? "data_platform"];
                     return (
                       <Link
                         key={p.id}

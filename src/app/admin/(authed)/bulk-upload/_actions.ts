@@ -8,7 +8,7 @@ export interface BulkRow {
   name: string;
   url?: string;
   description?: string;
-  sector: string;
+  sectors: string[];
   organization_type?: string;
   engagement_status?: string;
   capabilities: string[];
@@ -53,8 +53,8 @@ export async function commitBulkUploadAction(
       name: row.name,
       url: row.url ?? "",
       description: row.description ?? "",
-      sector: row.sector,
-      organization_type: row.organization_type ?? "independent",
+      sectors: row.sectors,
+      organization_type: row.organization_type ?? "nonprofit",
       engagement_status: row.engagement_status ?? "active",
       capabilities: row.capabilities,
       dataset_domains: row.dataset_domains,
@@ -77,8 +77,8 @@ export async function commitBulkUploadAction(
         name: u.row.name,
         url: u.row.url ?? "",
         description: u.row.description ?? "",
-        sector: u.row.sector,
-        organization_type: u.row.organization_type ?? "independent",
+        sectors: u.row.sectors,
+        organization_type: u.row.organization_type ?? "nonprofit",
         engagement_status: u.row.engagement_status ?? "active",
         capabilities: u.row.capabilities,
         dataset_domains: u.row.dataset_domains,

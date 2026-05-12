@@ -19,10 +19,10 @@ export interface SectorDef {
 
 export const SECTORS: SectorDef[] = [
   {
-    value: "federal_producer",
-    label: "Federal Producer",
+    value: "data_producer",
+    label: "Data Producer",
     short: "Producer",
-    blurb: "Agencies that originate and publish the federal datasets everyone else mirrors.",
+    blurb: "Agencies and bodies that originate, collect, and publish the federal climate datasets the rest of the ecosystem builds on.",
     color: "#15506C",
     tint: "#D9E7ED",
     gradient: "bg-sector-federal",
@@ -73,9 +73,9 @@ export const SECTOR_COLOR: Record<Sector, string> = Object.fromEntries(
 ) as Record<Sector, string>;
 
 export const ORGANIZATION_TYPES: { value: OrganizationType; label: string }[] = [
-  { value: "nonprofit", label: "Nonprofit" },
-  { value: "academic", label: "Academic" },
-  { value: "company", label: "Company" },
+  { value: "nonprofit", label: "Non Profit" },
+  { value: "academic", label: "Academia" },
+  { value: "company", label: "Private" },
   { value: "government", label: "Government" },
   { value: "independent", label: "Independent" },
 ];
@@ -87,41 +87,69 @@ export const ENGAGEMENT_STATUSES: { value: EngagementStatus; label: string }[] =
 ];
 
 export const CAPABILITIES: Capability[] = [
-  "Archives and/or Mirrors",
-  "Surfaces Priority Datasets",
-  "Assesses Risk to Datasets",
-  "Proposes Proxy / Alternative Datasets",
-  "Repository Hosting",
-  "Standards & Governance",
-  "Convening",
-  "Policy & Advocacy",
+  "Data Usability & Access",
+  "Prioritizing Data",
+  "User Activation",
+  "Innovation",
+  "Community Use",
+  "Research",
+  "Alternative, Proxy Datasets",
+  "Domain & Data Expertise",
+  "Data Quality & Governance",
+  "Coordination",
+  "Distributed Governance & Collaboration",
+  "Advocacy & Lobbying",
+  "Legal Protection & Litigation",
+  "Data Collection & Observing Systems",
+  "Data Tools, Products & Models",
+  "Integration with Other Data Sources",
+  "Other Fed Data (Social, Economic, Health)",
 ];
 
 export const CAPABILITY_SHORT: Record<Capability, string> = {
-  "Archives and/or Mirrors": "Archives",
-  "Surfaces Priority Datasets": "Surfaces",
-  "Assesses Risk to Datasets": "Risk",
-  "Proposes Proxy / Alternative Datasets": "Proxies",
-  "Repository Hosting": "Hosting",
-  "Standards & Governance": "Standards",
-  "Convening": "Convening",
-  "Policy & Advocacy": "Advocacy",
+  "Data Usability & Access": "Access",
+  "Prioritizing Data": "Prioritize",
+  "User Activation": "Activate",
+  Innovation: "Innovate",
+  "Community Use": "Community",
+  Research: "Research",
+  "Alternative, Proxy Datasets": "Proxies",
+  "Domain & Data Expertise": "Expertise",
+  "Data Quality & Governance": "Quality",
+  Coordination: "Coord.",
+  "Distributed Governance & Collaboration": "DistGov",
+  "Advocacy & Lobbying": "Advocacy",
+  "Legal Protection & Litigation": "Legal",
+  "Data Collection & Observing Systems": "Collect",
+  "Data Tools, Products & Models": "Tools",
+  "Integration with Other Data Sources": "Integrate",
+  "Other Fed Data (Social, Economic, Health)": "Other Fed",
 };
 
 export const DATASET_DOMAINS: DatasetDomain[] = [
-  "Climate",
-  "Environmental",
-  "Greenhouse Gas",
-  "Government",
-  "Social Science",
-  "Earth Observation",
+  "Climate & Earth Science",
+  "Greenhouse Gas & Emissions",
+  "Energy",
+  "Extreme Weather & Hazards",
+  "Environmental Health & Justice",
+  "Geospatial & Remote Sensing",
+  "Socioeconomic",
 ];
 
 export const DOMAIN_SHORT: Record<DatasetDomain, string> = {
-  Climate: "Climate",
-  Environmental: "Env",
-  "Greenhouse Gas": "GHG",
-  Government: "Gov",
-  "Social Science": "SocSci",
-  "Earth Observation": "EarthObs",
+  "Climate & Earth Science": "Climate",
+  "Greenhouse Gas & Emissions": "GHG",
+  Energy: "Energy",
+  "Extreme Weather & Hazards": "Weather",
+  "Environmental Health & Justice": "Health/EJ",
+  "Geospatial & Remote Sensing": "Geo",
+  Socioeconomic: "Socio",
 };
+
+/**
+ * Pick the primary sector for color/banner treatment when an org has multiple.
+ * Returns the first sector if any, falling back to a sensible default.
+ */
+export function primarySector(org: { sectors?: Sector[] }): Sector {
+  return org.sectors?.[0] ?? "data_platform";
+}

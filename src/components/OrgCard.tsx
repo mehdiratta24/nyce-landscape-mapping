@@ -4,7 +4,7 @@ import { SECTOR_DEF } from "@/lib/constants";
 import { timeAgo, hostFromUrl } from "@/lib/utils";
 
 export function OrgCard({ org }: { org: Organization }) {
-  const sector = SECTOR_DEF[org.sector];
+  const primary = SECTOR_DEF[org.sectors[0] ?? "data_platform"];
   const extraCaps = Math.max(0, org.capabilities.length - 3);
 
   return (
@@ -12,16 +12,28 @@ export function OrgCard({ org }: { org: Organization }) {
       href={`/directory/${org.id}`}
       className="group relative flex flex-col rounded-2xl border border-nyce-line bg-white hover:border-nyce-accent/40 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-nyce-accent/5 transition-all overflow-hidden min-h-[240px]"
     >
-      <div className={`h-1.5 w-full ${sector.gradient}`} aria-hidden />
+      <div className={`h-1.5 w-full ${primary.gradient}`} aria-hidden />
 
       <div className="flex-1 flex flex-col p-5">
         <div className="flex items-start justify-between gap-2 mb-3">
           <div className="flex flex-wrap items-center gap-1.5">
-            <span
-              className={`text-[10px] uppercase tracking-wider font-semibold px-2 py-0.5 rounded-full ${sector.chipClass}`}
-            >
-              {sector.short}
-            </span>
+            {org.sectors.length > 0 ? (
+              org.sectors.map((s) => {
+                const def = SECTOR_DEF[s];
+                return (
+                  <span
+                    key={s}
+                    className={`text-[10px] uppercase tracking-wider font-semibold px-2 py-0.5 rounded-full ${def.chipClass}`}
+                  >
+                    {def.short}
+                  </span>
+                );
+              })
+            ) : (
+              <span className="text-[10px] uppercase tracking-wider text-nyce-muted">
+                Unclassified
+              </span>
+            )}
             <span className="text-[10px] uppercase tracking-wider text-nyce-muted px-2 py-0.5 rounded-full bg-nyce-paper border border-nyce-line capitalize">
               {org.organization_type}
             </span>

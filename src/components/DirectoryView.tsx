@@ -58,7 +58,7 @@ export function DirectoryView({
   const filtered = useMemo(() => {
     let list = orgs;
     if (q.trim()) list = fuse.search(q).map((r) => r.item);
-    if (sector) list = list.filter((o) => o.sector === sector);
+    if (sector) list = list.filter((o) => o.sectors.includes(sector));
     if (type) list = list.filter((o) => o.organization_type === type);
     if (caps.length) list = list.filter((o) => caps.every((c) => o.capabilities.includes(c)));
     if (domains.length)
@@ -357,7 +357,7 @@ function exportCsv(orgs: Organization[]) {
     name: o.name,
     url: o.url,
     description: o.description,
-    sector: o.sector,
+    sectors: JSON.stringify(o.sectors),
     organization_type: o.organization_type,
     engagement_status: o.engagement_status,
     capabilities: JSON.stringify(o.capabilities),

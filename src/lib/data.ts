@@ -17,12 +17,22 @@ function loadJson(): Organization[] {
 }
 
 function dbRowToOrg(row: Record<string, unknown>): Organization {
+  // Backward-compat: legacy schema had `sector` (single value); new schema
+  // has `sectors` (text[]). Prefer sectors, fall back to wrapping sector.
+  const sectorsArr = (row.sectors as Organization["sectors"] | undefined) ?? null;
+  const legacySector = row.sector as Organization["sectors"][number] | undefined;
+  const sectors: Organization["sectors"] = sectorsArr && sectorsArr.length > 0
+    ? sectorsArr
+    : legacySector
+    ? [legacySector]
+    : [];
+
   return {
     id: String(row.id),
     name: String(row.name ?? ""),
     url: String(row.url ?? ""),
     description: String(row.description ?? ""),
-    sector: row.sector as Organization["sector"],
+    sectors,
     organization_type: row.organization_type as Organization["organization_type"],
     engagement_status: row.engagement_status as Organization["engagement_status"],
     capabilities: ((row.capabilities as string[]) ?? []) as Organization["capabilities"],
