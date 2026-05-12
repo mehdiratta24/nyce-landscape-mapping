@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getAllOrganizations, getOrganizationById } from "@/lib/data";
-import { SECTOR_DEF } from "@/lib/constants";
+import { ORGANIZATION_TYPES, SECTOR_DEF } from "@/lib/constants";
 import { hostFromUrl, timeAgo } from "@/lib/utils";
 
 export const dynamic = "force-dynamic";
@@ -11,10 +11,13 @@ export default async function OrgDetail({ params }: { params: { id: string } }) 
   if (!org) notFound();
 
   const all = await getAllOrganizations();
-  const partners = org.partners
+  const coordinatesWith = org.partners
     .map((pid) => all.find((o) => o.id === pid))
     .filter((x): x is NonNullable<typeof x> => Boolean(x));
   const primary = SECTOR_DEF[org.sectors[0] ?? "data_platform"];
+  const typeLabel =
+    ORGANIZATION_TYPES.find((t) => t.value === org.organization_type)?.label ??
+    org.organization_type;
 
   return (
     <div className="max-w-5xl mx-auto px-6 py-10">
@@ -39,6 +42,9 @@ export default async function OrgDetail({ params }: { params: { id: string } }) 
                 {SECTOR_DEF[s].label}
               </span>
             ))}
+            <span className="text-[10px] uppercase tracking-wider bg-white/15 backdrop-blur-sm px-2.5 py-1 rounded-full font-semibold">
+              {typeLabel}
+            </span>
             {org.is_verified && (
               <span className="text-[10px] uppercase tracking-wider bg-white/15 backdrop-blur-sm px-2.5 py-1 rounded-full font-semibold">
                 Verified
@@ -76,15 +82,6 @@ export default async function OrgDetail({ params }: { params: { id: string } }) 
               </p>
             </section>
 
-            <StatRow
-              items={[
-                { label: "Capabilities", value: org.capabilities.length },
-                { label: "Dataset domains", value: org.dataset_domains.length },
-                { label: "Partners", value: org.partners.length },
-                { label: "Type", value: org.organization_type, capitalize: true },
-              ]}
-            />
-
             <Section title="Capabilities">
               {org.capabilities.length > 0 ? (
                 <TagCluster tags={org.capabilities} tone="capability" />
@@ -101,10 +98,10 @@ export default async function OrgDetail({ params }: { params: { id: string } }) 
               )}
             </Section>
 
-            <Section title="Partners">
-              {partners.length > 0 ? (
+            <Section title="Coordinates with">
+              {coordinatesWith.length > 0 ? (
                 <div className="flex flex-wrap gap-2">
-                  {partners.map((p) => {
+                  {coordinatesWith.map((p) => {
                     const ps = SECTOR_DEF[p.sectors[0] ?? "data_platform"];
                     return (
                       <Link
@@ -126,48 +123,12 @@ export default async function OrgDetail({ params }: { params: { id: string } }) 
                   })}
                 </div>
               ) : (
-                <Empty note="No partner references detected in the description text." />
-              )}
-            </Section>
-
-            <Section title="Datasets of focus">
-              {org.datasets_of_focus.length > 0 ? (
-                <TagCluster tags={org.datasets_of_focus} tone="dataset" />
-              ) : (
-                <Empty note="None recorded." />
+                <Empty note="No coordination references recorded." />
               )}
             </Section>
           </div>
 
           <aside className="space-y-6">
-            <div className="rounded-2xl border border-nyce-line bg-white p-6">
-              <h3 className="text-[11px] uppercase tracking-[0.22em] text-nyce-muted mb-4 font-semibold">
-                Engagement
-              </h3>
-              <div className="flex items-center gap-3">
-                <span
-                  className={`h-2 w-2 rounded-full ${
-                    org.engagement_status === "active"
-                      ? "bg-nyce-accent"
-                      : org.engagement_status === "in_contact"
-                      ? "bg-nyce-yellow"
-                      : "bg-nyce-muted"
-                  }`}
-                  aria-hidden
-                />
-                <span className="font-display font-semibold text-xl text-nyce-ink capitalize">
-                  {org.engagement_status.replace("_", " ")}
-                </span>
-              </div>
-              <p className="mt-3 text-xs text-nyce-muted leading-relaxed">
-                {org.engagement_status === "active"
-                  ? "Active engagement between NYCE and this organization is ongoing."
-                  : org.engagement_status === "in_contact"
-                  ? "Initial contact established; engagement is not yet active."
-                  : "Record is admin-only and withheld from public views."}
-              </p>
-            </div>
-
             {(org.contact_name || org.contact_email) && (
               <div className="rounded-2xl border border-nyce-line bg-white p-6">
                 <h3 className="text-[11px] uppercase tracking-[0.22em] text-nyce-muted mb-4 font-semibold">
@@ -232,42 +193,16 @@ function Empty({ note }: { note: string }) {
   return <p className="text-sm text-nyce-muted italic">{note}</p>;
 }
 
-function StatRow({
-  items,
-}: {
-  items: { label: string; value: number | string; capitalize?: boolean }[];
-}) {
-  return (
-    <dl className="grid grid-cols-2 md:grid-cols-4 gap-px bg-nyce-line rounded-xl overflow-hidden border border-nyce-line">
-      {items.map((i) => (
-        <div key={i.label} className="bg-white px-5 py-4">
-          <dd
-            className={`font-display font-bold text-2xl text-nyce-ink tabular-nums ${
-              i.capitalize ? "capitalize" : ""
-            }`}
-          >
-            {i.value}
-          </dd>
-          <dt className="text-[10px] uppercase tracking-wider text-nyce-muted mt-1">
-            {i.label}
-          </dt>
-        </div>
-      ))}
-    </dl>
-  );
-}
-
 function TagCluster({
   tags,
   tone,
 }: {
   tags: readonly string[];
-  tone: "capability" | "domain" | "dataset";
+  tone: "capability" | "domain";
 }) {
   const styles: Record<typeof tone, string> = {
     capability: "bg-white border-nyce-line text-nyce-ink",
     domain: "bg-nyce-accentSoft border-nyce-accent/30 text-nyce-accent",
-    dataset: "bg-nyce-yellowSoft border-nyce-yellow/40 text-[#7C5F00]",
   };
   return (
     <div className="flex flex-wrap gap-1.5">
