@@ -1,16 +1,57 @@
 import Link from "next/link";
-import { CAPABILITIES, DATASET_DOMAINS, SECTORS } from "@/lib/constants";
+import {
+  CAPABILITIES,
+  DATASET_DOMAINS,
+  ORGANIZATION_TYPES,
+} from "@/lib/constants";
 import { getAllOrganizations } from "@/lib/data";
 import { OverlapMatrix } from "@/components/OverlapMatrix";
+import type { Capability } from "@/lib/types";
 
 export default async function Home() {
   const orgs = await getAllOrganizations();
-  const countBySector = orgs.reduce<Record<string, number>>((acc, o) => {
-    for (const s of o.sectors) acc[s] = (acc[s] || 0) + 1;
-    return acc;
-  }, {});
+
   const totalCapSlots = orgs.reduce((n, o) => n + o.capabilities.length, 0);
   const totalDomainSlots = orgs.reduce((n, o) => n + o.dataset_domains.length, 0);
+
+  const stakeholders: {
+    value: Capability;
+    label: string;
+    blurb: string;
+    tone: string;
+  }[] = [
+    {
+      value: "Stakeholders: Community & Civic",
+      label: "Community & Civic",
+      blurb:
+        "Coalitions, public-access archives, and ad-hoc groups working with local communities, civil society, and the broader public.",
+      tone: "bg-sector-preservation",
+    },
+    {
+      value: "Stakeholders: Research",
+      label: "Research",
+      blurb:
+        "Universities, scholarly societies, and repositories serving researchers, scientists, and the academic data community.",
+      tone: "bg-sector-academia",
+    },
+    {
+      value: "Stakeholders: Private Sector",
+      label: "Private Sector",
+      blurb:
+        "Companies, industry platforms, and organizations whose work intersects with corporate, financial, and commercial use of public data.",
+      tone: "bg-sector-platform",
+    },
+  ];
+
+  const stakeholderCounts = stakeholders.map((s) => ({
+    ...s,
+    n: orgs.filter((o) => o.capabilities.includes(s.value)).length,
+  }));
+
+  const typeCounts = ORGANIZATION_TYPES.map((t) => ({
+    ...t,
+    n: orgs.filter((o) => o.organization_type === t.value).length,
+  })).filter((t) => t.n > 0);
 
   return (
     <>
@@ -44,9 +85,9 @@ export default async function Home() {
             <p className="mt-8 text-base md:text-lg text-nyce-slate max-w-3xl leading-relaxed">
               This directory catalogs {orgs.length} organizations active in the preservation,
               redistribution, and analysis of federal climate and environmental datasets.
-              Organizations are classified by sector, capability, and dataset domain to support
-              coordination across preservation networks, data platforms, and research
-              institutions.
+              Organizations are tagged by capability, dataset domain, and the stakeholders they
+              serve to support coordination across preservation networks, data platforms, and
+              research institutions.
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
               <Link
@@ -69,55 +110,55 @@ export default async function Home() {
             <Stat label="Organizations indexed" value={orgs.length} accent />
             <Stat label="Capability categories" value={CAPABILITIES.length} />
             <Stat label="Dataset domains" value={DATASET_DOMAINS.length} />
-            <Stat label="Sector classifications" value={SECTORS.length} />
+            <Stat label="Stakeholder groups" value={stakeholders.length} />
           </dl>
         </div>
       </section>
 
-      {/* SECTORS */}
+      {/* SECTION 1 — STAKEHOLDERS */}
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="flex items-end justify-between mb-10 flex-wrap gap-6">
           <div>
             <p className="text-[11px] uppercase tracking-[0.22em] text-nyce-muted mb-3 font-semibold">
-              Section 1 · Sector classification
+              Section 1 · Stakeholders served
             </p>
             <h2 className="font-display font-bold text-3xl md:text-4xl text-nyce-ink tracking-[-0.02em] max-w-2xl">
-              Organizations are classified into four sectors by primary function.
+              Who these organizations work with.
             </h2>
           </div>
           <p className="text-nyce-slate max-w-md text-sm leading-relaxed">
-            Sector assignment reflects each organization's principal role in the data ecosystem,
-            as determined from self-description and external documentation. Select a sector to
-            filter the directory.
+            Each organization is tagged by the stakeholder groups it primarily serves. An
+            organization may serve more than one group. Select a group to filter the directory.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {SECTORS.map((s, i) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {stakeholderCounts.map((s, i) => (
             <Link
               key={s.value}
-              href={`/directory?sector=${s.value}`}
-              className={`reveal reveal-delay-${i + 1} group relative overflow-hidden rounded-2xl p-8 min-h-[220px] flex flex-col justify-between border border-nyce-line bg-white hover:border-nyce-accent/40 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-nyce-accent/5 transition-all`}
+              href={`/directory?cap=${encodeURIComponent(s.value)}`}
+              className={`reveal reveal-delay-${i + 1} group relative overflow-hidden rounded-2xl p-7 min-h-[220px] flex flex-col justify-between border border-nyce-line bg-white hover:border-nyce-accent/40 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-nyce-accent/5 transition-all`}
             >
               <div
-                className={`absolute inset-0 opacity-[0.07] group-hover:opacity-[0.12] transition-opacity ${s.gradient}`}
+                className={`absolute inset-0 opacity-[0.07] group-hover:opacity-[0.12] transition-opacity ${s.tone}`}
                 aria-hidden
               />
               <div className="relative flex items-start justify-between gap-4">
                 <div>
                   <div
-                    className={`inline-block h-1.5 w-10 rounded-full mb-4 ${s.gradient}`}
+                    className={`inline-block h-1.5 w-10 rounded-full mb-4 ${s.tone}`}
                     aria-hidden
                   />
+                  <p className="text-[11px] uppercase tracking-[0.18em] text-nyce-muted font-semibold mb-1.5">
+                    Stakeholder
+                  </p>
                   <h3 className="font-display font-semibold text-2xl text-nyce-ink tracking-[-0.02em]">
                     {s.label}
                   </h3>
-                  <p className="mt-2 text-nyce-slate max-w-sm leading-relaxed text-sm">
-                    {s.blurb}
-                  </p>
+                  <p className="mt-2 text-sm text-nyce-slate leading-relaxed">{s.blurb}</p>
                 </div>
-                <div className="text-right">
+                <div className="text-right flex-shrink-0">
                   <div className="font-display font-bold text-5xl text-nyce-accent tabular-nums leading-none">
-                    {countBySector[s.value] ?? 0}
+                    {s.n}
                   </div>
                   <div className="text-[10px] uppercase tracking-wider text-nyce-muted mt-1">
                     n
@@ -125,11 +166,39 @@ export default async function Home() {
                 </div>
               </div>
               <div className="relative mt-6 text-xs text-nyce-muted inline-flex items-center gap-2 group-hover:text-nyce-accent transition-colors uppercase tracking-wider font-semibold">
-                View sector
+                Filter directory
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </div>
             </Link>
           ))}
+        </div>
+
+        {/* Organization-type chip strip */}
+        <div className="mt-6 rounded-2xl border border-nyce-line bg-white px-6 py-5">
+          <div className="flex items-center justify-between flex-wrap gap-4">
+            <div>
+              <p className="text-[11px] uppercase tracking-[0.22em] text-nyce-muted font-semibold">
+                By organization type
+              </p>
+              <p className="text-sm text-nyce-slate mt-1">
+                Distribution of the {orgs.length} indexed organizations.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {typeCounts.map((t) => (
+                <Link
+                  key={t.value}
+                  href={`/directory?type=${t.value}`}
+                  className="inline-flex items-baseline gap-2 px-4 py-2 rounded-full border border-nyce-line bg-nyce-paper hover:border-nyce-accent/40 hover:bg-white transition-colors"
+                >
+                  <span className="font-display font-bold text-lg text-nyce-accent tabular-nums">
+                    {t.n}
+                  </span>
+                  <span className="text-xs text-nyce-slate font-medium">{t.label}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -197,12 +266,12 @@ export default async function Home() {
           <Guide
             label="3.1"
             title="Grid"
-            body="Card layout listing each organization with sector, type, capabilities, and last-updated timestamp. Default view."
+            body="Card layout listing each organization with type, capabilities, and last-updated timestamp. Default view."
           />
           <Guide
             label="3.2"
             title="Table"
-            body="Tabular layout with columns sortable by name, sector, type, engagement status, capability count, domain list, partner count, and recency."
+            body="Tabular layout with columns sortable by name, type, capability count, domain list, coordination count, and recency."
           />
           <Guide
             label="3.3"
@@ -223,11 +292,10 @@ export default async function Home() {
           </h2>
           <div className="grid md:grid-cols-2 gap-6 text-sm text-nyce-slate leading-relaxed">
             <p>
-              Records are compiled from public documentation and NYCE engagement activity. Sector
-              assignments and capability tags are based on each organization's stated scope;
-              partner relationships are extracted from prose descriptions where explicitly
-              declared. Duplicate entries have been merged; deprioritized entries are withheld
-              from public views.
+              Records are compiled from public documentation and NYCE engagement activity.
+              Capability and stakeholder tags reflect each organization's stated scope; coordination
+              relationships are extracted from prose descriptions where explicitly declared.
+              Duplicate entries have been merged.
             </p>
             <p>
               This directory is a working document. Proposed edits from external contributors

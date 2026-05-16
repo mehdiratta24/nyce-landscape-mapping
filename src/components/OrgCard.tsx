@@ -43,11 +43,6 @@ export function OrgCard({ org }: { org: Organization }) {
               </span>
             )}
           </div>
-          {org.engagement_status !== "active" && (
-            <span className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-nyce-yellowSoft text-[#7C5F00] capitalize">
-              {org.engagement_status.replace("_", " ")}
-            </span>
-          )}
         </div>
 
         <h3 className="font-display font-semibold text-xl text-nyce-ink leading-snug tracking-[-0.02em] group-hover:text-nyce-accent transition-colors">

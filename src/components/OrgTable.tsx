@@ -10,10 +10,9 @@ type SortKey =
   | "name"
   | "sector"
   | "organization_type"
-  | "engagement_status"
   | "capabilities"
   | "dataset_domains"
-  | "partners"
+  | "coordinates_with"
   | "last_updated";
 
 export function OrgTable({ orgs }: { orgs: Organization[] }) {
@@ -31,13 +30,11 @@ export function OrgTable({ orgs }: { orgs: Organization[] }) {
           return o.sectors.map((s) => SECTOR_DEF[s].short).join(",");
         case "organization_type":
           return o.organization_type;
-        case "engagement_status":
-          return o.engagement_status;
         case "capabilities":
           return o.capabilities.length;
         case "dataset_domains":
           return o.dataset_domains.join(",");
-        case "partners":
+        case "coordinates_with":
           return o.partners.length;
         case "last_updated":
           return new Date(o.last_updated).getTime() || 0;
@@ -80,10 +77,9 @@ export function OrgTable({ orgs }: { orgs: Organization[] }) {
             {header("name", "Name")}
             {header("sector", "Sector")}
             {header("organization_type", "Type")}
-            {header("engagement_status", "Status")}
             {header("capabilities", "Caps")}
             {header("dataset_domains", "Domains")}
-            {header("partners", "Partners")}
+            {header("coordinates_with", "Coordinates with")}
             {header("last_updated", "Updated")}
           </tr>
         </thead>
@@ -112,9 +108,6 @@ export function OrgTable({ orgs }: { orgs: Organization[] }) {
                   {o.sectors.map((s) => SECTOR_DEF[s].short).join(", ") || "—"}
                 </td>
                 <td className="px-3 py-3 text-nyce-muted capitalize">{o.organization_type}</td>
-                <td className="px-3 py-3 text-nyce-muted capitalize">
-                  {o.engagement_status.replace("_", " ")}
-                </td>
                 <td className="px-3 py-3 text-nyce-muted tabular-nums font-mono text-xs">
                   {o.capabilities.length}
                 </td>
@@ -132,7 +125,7 @@ export function OrgTable({ orgs }: { orgs: Organization[] }) {
           })}
           {sorted.length === 0 && (
             <tr>
-              <td colSpan={8} className="px-3 py-10 text-center text-nyce-muted">
+              <td colSpan={7} className="px-3 py-10 text-center text-nyce-muted">
                 No organizations match these filters.
               </td>
             </tr>
