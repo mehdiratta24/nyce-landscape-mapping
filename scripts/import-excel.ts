@@ -25,7 +25,7 @@ import * as XLSX from "xlsx";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
-const XLSX_PATH = path.join(ROOT, "data/raw/landscape-2026-04-29.xlsx");
+const XLSX_PATH = path.join(ROOT, "data/raw/landscape-2026-05-15.xlsx");
 const EXISTING_JSON = path.join(ROOT, "data/organizations.json");
 const OUT_PATH = path.join(ROOT, "data/organizations.json");
 
@@ -33,21 +33,19 @@ const OUT_PATH = path.join(ROOT, "data/organizations.json");
 const CAPABILITIES = [
   "Data Usability & Access",
   "Prioritizing Data",
-  "User Activation",
   "Innovation",
-  "Community Use",
-  "Research",
+  "Stakeholders: Community & Civic",
+  "Stakeholders: Research",
+  "Stakeholders: Private Sector",
   "Alternative, Proxy Datasets",
   "Domain & Data Expertise",
   "Data Quality & Governance",
   "Coordination",
-  "Distributed Governance & Collaboration",
   "Advocacy & Lobbying",
   "Legal Protection & Litigation",
   "Data Collection & Observing Systems",
   "Data Tools, Products & Models",
   "Integration with Other Data Sources",
-  "Other Fed Data (Social, Economic, Health)",
 ] as const;
 
 const DATASET_DOMAINS = [
@@ -137,9 +135,17 @@ function main() {
     return out;
   });
 
-  // Load existing JSON for ID continuity.
-  const existing: Array<{ id: string; name: string }> = fs.existsSync(EXISTING_JSON)
-    ? (JSON.parse(fs.readFileSync(EXISTING_JSON, "utf8")) as Array<{ id: string; name: string }>)
+  // Load existing JSON for ID + sector continuity. The May 15 Excel dropped
+  // the "Sector" column, so we backfill sectors from the previous import
+  // when a name matches.
+  const existing: Array<{ id: string; name: string; sectors?: Sector[] }> = fs.existsSync(
+    EXISTING_JSON,
+  )
+    ? (JSON.parse(fs.readFileSync(EXISTING_JSON, "utf8")) as Array<{
+        id: string;
+        name: string;
+        sectors?: Sector[];
+      }>)
     : [];
   // Normalize curly quotes / dashes / whitespace so a renamed-with-a-curly-apostrophe
   // row still matches its predecessor.
@@ -152,8 +158,11 @@ function main() {
       .replace(/\s+/g, " ")
       .trim();
   const existingByName = new Map<string, string>();
+  const existingSectorsByName = new Map<string, Sector[]>();
   for (const o of existing) {
-    existingByName.set(normalize(o.name), o.id);
+    const key = normalize(o.name);
+    existingByName.set(key, o.id);
+    if (o.sectors && o.sectors.length) existingSectorsByName.set(key, o.sectors);
   }
   const usedIds = new Set(existing.map((o) => o.id));
   let nextNewId = (() => {
@@ -170,11 +179,16 @@ function main() {
     const name = cleanCell(row["name"]);
     if (!name) continue;
 
-    // Sectors (multi-valued)
+    // Sectors (multi-valued). The May 15 Excel removed this column, so we
+    // first try to read it from the row; if absent or empty, fall back to
+    // whatever the org had in the previous import.
     const sectorRaw = cleanCell(row["Sector"]);
-    const sectors: Sector[] = splitList(sectorRaw)
+    let sectors: Sector[] = splitList(sectorRaw)
       .map((s) => SECTOR_FROM_EXCEL[s.toLowerCase()])
       .filter((x): x is Sector => Boolean(x));
+    if (sectors.length === 0) {
+      sectors = existingSectorsByName.get(normalize(name)) ?? [];
+    }
 
     // Org type
     const typeRaw = cleanCell(row["Organization Type"]);

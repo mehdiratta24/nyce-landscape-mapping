@@ -16,21 +16,19 @@ export type EngagementStatus = "active" | "in_contact" | "deprioritized";
 export type Capability =
   | "Data Usability & Access"
   | "Prioritizing Data"
-  | "User Activation"
   | "Innovation"
-  | "Community Use"
-  | "Research"
+  | "Stakeholders: Community & Civic"
+  | "Stakeholders: Research"
+  | "Stakeholders: Private Sector"
   | "Alternative, Proxy Datasets"
   | "Domain & Data Expertise"
   | "Data Quality & Governance"
   | "Coordination"
-  | "Distributed Governance & Collaboration"
   | "Advocacy & Lobbying"
   | "Legal Protection & Litigation"
   | "Data Collection & Observing Systems"
   | "Data Tools, Products & Models"
-  | "Integration with Other Data Sources"
-  | "Other Fed Data (Social, Economic, Health)";
+  | "Integration with Other Data Sources";
 
 export type DatasetDomain =
   | "Climate & Earth Science"

@@ -13,8 +13,9 @@
     "engagement_status": "active",
     "capabilities": [
       "Data Usability & Access",
-      "Coordination",
-      "Distributed Governance & Collaboration"
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research",
+      "Coordination"
     ],
     "dataset_domains": [
       "Climate & Earth Science",
@@ -26,8 +27,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "2",
@@ -41,9 +42,9 @@
     "organization_type": "academic",
     "engagement_status": "active",
     "capabilities": [
-      "Research",
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research",
       "Data Quality & Governance",
-      "Distributed Governance & Collaboration",
       "Advocacy & Lobbying",
       "Legal Protection & Litigation"
     ],
@@ -59,8 +60,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "5",
@@ -74,8 +75,9 @@
     "engagement_status": "active",
     "capabilities": [
       "Data Usability & Access",
-      "Data Quality & Governance",
-      "Other Fed Data (Social, Economic, Health)"
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research",
+      "Data Quality & Governance"
     ],
     "dataset_domains": [
       "Socioeconomic"
@@ -88,8 +90,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "6",
@@ -104,23 +106,20 @@
     "engagement_status": "active",
     "capabilities": [
       "Data Usability & Access",
-      "Research",
-      "Integration with Other Data Sources",
-      "Other Fed Data (Social, Economic, Health)"
+      "Stakeholders: Research",
+      "Integration with Other Data Sources"
     ],
     "dataset_domains": [
       "Socioeconomic"
     ],
-    "partners": [
-      "74"
-    ],
+    "partners": [],
     "datasets_of_focus": [],
     "contact_name": null,
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "7",
@@ -134,6 +133,8 @@
     "engagement_status": "active",
     "capabilities": [
       "Data Usability & Access",
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research",
       "Data Quality & Governance"
     ],
     "dataset_domains": [
@@ -145,8 +146,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "8",
@@ -161,6 +162,8 @@
     "capabilities": [
       "Data Usability & Access",
       "Innovation",
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research",
       "Data Tools, Products & Models"
     ],
     "dataset_domains": [
@@ -172,34 +175,8 @@
     "contact_email": "info@webrecorder.net",
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "9",
-    "name": "Wayback Machine",
-    "url": "https://web.archive.org/",
-    "description": "An initiative of the Internet Archive building a digital library of Internet sites and other cultural artifacts in digital form.",
-    "sectors": [
-      "data_platform"
-    ],
-    "organization_type": "nonprofit",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Data Usability & Access"
-    ],
-    "dataset_domains": [
-      "Climate & Earth Science",
-      "Socioeconomic"
-    ],
-    "partners": [],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": null,
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "10",
@@ -214,6 +191,7 @@
     "capabilities": [
       "Data Usability & Access",
       "Prioritizing Data",
+      "Stakeholders: Community & Civic",
       "Data Quality & Governance",
       "Advocacy & Lobbying"
     ],
@@ -230,8 +208,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "11",
@@ -244,7 +222,9 @@
     "organization_type": "nonprofit",
     "engagement_status": "active",
     "capabilities": [
-      "Data Usability & Access"
+      "Data Usability & Access",
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research"
     ],
     "dataset_domains": [
       "Climate & Earth Science",
@@ -256,8 +236,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "13",
@@ -271,6 +251,7 @@
     "engagement_status": "active",
     "capabilities": [
       "Data Usability & Access",
+      "Stakeholders: Community & Civic",
       "Advocacy & Lobbying"
     ],
     "dataset_domains": [
@@ -283,8 +264,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "14",
@@ -298,7 +279,8 @@
     "engagement_status": "active",
     "capabilities": [
       "Prioritizing Data",
-      "Research",
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research",
       "Data Quality & Governance",
       "Advocacy & Lobbying",
       "Legal Protection & Litigation"
@@ -313,8 +295,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "15",
@@ -328,9 +310,9 @@
     "engagement_status": "active",
     "capabilities": [
       "Data Usability & Access",
-      "Community Use",
-      "Legal Protection & Litigation",
-      "Other Fed Data (Social, Economic, Health)"
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research",
+      "Legal Protection & Litigation"
     ],
     "dataset_domains": [
       "Environmental Health & Justice",
@@ -342,8 +324,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "16",
@@ -359,7 +341,8 @@
     "capabilities": [
       "Data Usability & Access",
       "Prioritizing Data",
-      "Research",
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research",
       "Domain & Data Expertise",
       "Data Quality & Governance",
       "Coordination",
@@ -381,8 +364,8 @@
     "contact_email": "SStall@agu.org",
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "17",
@@ -396,11 +379,12 @@
     "engagement_status": "active",
     "capabilities": [
       "Prioritizing Data",
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research",
       "Alternative, Proxy Datasets",
       "Domain & Data Expertise",
       "Data Quality & Governance",
-      "Coordination",
-      "Distributed Governance & Collaboration"
+      "Coordination"
     ],
     "dataset_domains": [
       "Climate & Earth Science"
@@ -415,8 +399,8 @@
     "contact_email": "kate@intertidal.agency",
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "18",
@@ -431,10 +415,10 @@
     "capabilities": [
       "Data Usability & Access",
       "Prioritizing Data",
+      "Stakeholders: Research",
       "Domain & Data Expertise",
       "Data Quality & Governance",
       "Coordination",
-      "Distributed Governance & Collaboration",
       "Integration with Other Data Sources"
     ],
     "dataset_domains": [
@@ -456,8 +440,8 @@
     "contact_email": "sonia.wang@datafoundation.org",
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "19",
@@ -472,6 +456,9 @@
     "capabilities": [
       "Data Usability & Access",
       "Prioritizing Data",
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research",
+      "Stakeholders: Private Sector",
       "Domain & Data Expertise",
       "Data Quality & Governance",
       "Coordination"
@@ -491,8 +478,8 @@
     "contact_email": "thomas.karl@spglobal.com",
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "20",
@@ -507,6 +494,7 @@
     "capabilities": [
       "Data Usability & Access",
       "Prioritizing Data",
+      "Stakeholders: Research",
       "Domain & Data Expertise",
       "Data Quality & Governance",
       "Coordination",
@@ -526,8 +514,8 @@
     "contact_email": "ralph@keelingcurve.org",
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "22",
@@ -542,7 +530,8 @@
     "engagement_status": "active",
     "capabilities": [
       "Data Usability & Access",
-      "Research",
+      "Stakeholders: Research",
+      "Stakeholders: Private Sector",
       "Alternative, Proxy Datasets",
       "Domain & Data Expertise",
       "Data Quality & Governance",
@@ -560,8 +549,8 @@
     "contact_email": "ingwersw@stanford.edu",
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "23",
@@ -576,7 +565,7 @@
     "engagement_status": "active",
     "capabilities": [
       "Data Usability & Access",
-      "Community Use",
+      "Stakeholders: Community & Civic",
       "Data Quality & Governance",
       "Advocacy & Lobbying",
       "Data Tools, Products & Models"
@@ -593,46 +582,14 @@
     "contact_email": "smith@fractracker.org",
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "24",
-    "name": "Environmental & Health Data & Analysis Trust",
-    "url": "https://ehdat.org/",
-    "description": "Builds a modern, interoperable data and analytics platform to support environmental and public health decision-making. Designed for federal, state, Tribal, and local use, it integrates diverse datasets into a consistent, open architecture with tools tailored to real-world policy and planning needs.",
-    "sectors": [
-      "data_platform"
-    ],
-    "organization_type": "nonprofit",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Data Usability & Access",
-      "Data Quality & Governance",
-      "Data Tools, Products & Models",
-      "Integration with Other Data Sources",
-      "Other Fed Data (Social, Economic, Health)"
-    ],
-    "dataset_domains": [
-      "Environmental Health & Justice",
-      "Socioeconomic"
-    ],
-    "partners": [
-      "26"
-    ],
-    "datasets_of_focus": [],
-    "contact_name": "Sam Kay",
-    "contact_email": "sam@ehdat.org",
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "25",
     "name": "New York Climate Exchange (NYCE)",
     "url": "https://nyclimateexchange.org/",
-    "description": "Launched Climate Data Stewardship initiative to preserve and activate federal climate data.\r\n\r\nPreserving/stewarding/activating federal climate & environmental data; building frameworks for open data governance, access, and usability.",
+    "description": "Launched Climate Data Stewardship initiative to preserve and activate federal climate data.\n\nPreserving/stewarding/activating federal climate & environmental data; building frameworks for open data governance, access, and usability.",
     "sectors": [
       "preservation_effort"
     ],
@@ -642,10 +599,11 @@
       "Data Usability & Access",
       "Prioritizing Data",
       "Innovation",
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research",
       "Domain & Data Expertise",
       "Data Quality & Governance",
-      "Coordination",
-      "Distributed Governance & Collaboration"
+      "Coordination"
     ],
     "dataset_domains": [
       "Climate & Earth Science"
@@ -662,8 +620,8 @@
     "contact_email": "akoester@nyclimateexchange.org",
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "26",
@@ -678,9 +636,10 @@
     "capabilities": [
       "Data Usability & Access",
       "Prioritizing Data",
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research",
       "Data Quality & Governance",
       "Coordination",
-      "Distributed Governance & Collaboration",
       "Advocacy & Lobbying"
     ],
     "dataset_domains": [
@@ -700,8 +659,8 @@
     "contact_email": "brittany@openenvironmentaldata.org",
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "27",
@@ -716,6 +675,8 @@
     "capabilities": [
       "Data Usability & Access",
       "Prioritizing Data",
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research",
       "Data Quality & Governance",
       "Coordination"
     ],
@@ -732,8 +693,8 @@
     "contact_email": "lyndamk@gmail.com",
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "28",
@@ -747,8 +708,8 @@
     "engagement_status": "active",
     "capabilities": [
       "Data Usability & Access",
-      "User Activation",
-      "Community Use"
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research"
     ],
     "dataset_domains": [
       "Climate & Earth Science"
@@ -761,8 +722,8 @@
     "contact_email": "rlindsey@climate.us",
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "29",
@@ -776,9 +737,10 @@
     "engagement_status": "active",
     "capabilities": [
       "Data Usability & Access",
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research",
       "Data Quality & Governance",
       "Coordination",
-      "Distributed Governance & Collaboration",
       "Advocacy & Lobbying"
     ],
     "dataset_domains": [
@@ -794,8 +756,8 @@
     "contact_email": "joel@odenterprise.org",
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "30",
@@ -810,10 +772,11 @@
     "engagement_status": "active",
     "capabilities": [
       "Data Usability & Access",
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research",
       "Alternative, Proxy Datasets",
       "Data Tools, Products & Models",
-      "Integration with Other Data Sources",
-      "Other Fed Data (Social, Economic, Health)"
+      "Integration with Other Data Sources"
     ],
     "dataset_domains": [
       "Socioeconomic",
@@ -830,8 +793,8 @@
     "contact_email": "abby@theimpactproject.org",
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "31",
@@ -847,6 +810,8 @@
     "capabilities": [
       "Data Usability & Access",
       "Innovation",
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research",
       "Data Quality & Governance",
       "Data Tools, Products & Models"
     ],
@@ -862,8 +827,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "32",
@@ -877,11 +842,10 @@
     "engagement_status": "active",
     "capabilities": [
       "Prioritizing Data",
-      "Research",
+      "Stakeholders: Research",
       "Domain & Data Expertise",
       "Data Quality & Governance",
-      "Coordination",
-      "Distributed Governance & Collaboration"
+      "Coordination"
     ],
     "dataset_domains": [
       "Climate & Earth Science",
@@ -900,8 +864,8 @@
     "contact_email": "SStichter@nas.edu",
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "33",
@@ -914,7 +878,8 @@
     "organization_type": "nonprofit",
     "engagement_status": "active",
     "capabilities": [
-      "Research",
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research",
       "Data Quality & Governance",
       "Advocacy & Lobbying"
     ],
@@ -928,8 +893,8 @@
     "contact_email": "contact@newamerica.org",
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "34",
@@ -945,10 +910,9 @@
     "capabilities": [
       "Data Usability & Access",
       "Prioritizing Data",
-      "Community Use",
+      "Stakeholders: Community & Civic",
       "Alternative, Proxy Datasets",
       "Data Quality & Governance",
-      "Distributed Governance & Collaboration",
       "Advocacy & Lobbying"
     ],
     "dataset_domains": [
@@ -964,8 +928,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "35",
@@ -979,6 +943,7 @@
     "engagement_status": "active",
     "capabilities": [
       "Data Usability & Access",
+      "Stakeholders: Research",
       "Domain & Data Expertise",
       "Data Quality & Governance"
     ],
@@ -992,8 +957,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "36",
@@ -1008,6 +973,8 @@
     "engagement_status": "active",
     "capabilities": [
       "Data Usability & Access",
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research",
       "Data Tools, Products & Models"
     ],
     "dataset_domains": [
@@ -1019,8 +986,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "37",
@@ -1035,7 +1002,7 @@
     "engagement_status": "active",
     "capabilities": [
       "Data Usability & Access",
-      "Research",
+      "Stakeholders: Research",
       "Integration with Other Data Sources"
     ],
     "dataset_domains": [
@@ -1048,8 +1015,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "38",
@@ -1064,7 +1031,8 @@
     "engagement_status": "active",
     "capabilities": [
       "Data Usability & Access",
-      "Research",
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research",
       "Alternative, Proxy Datasets",
       "Domain & Data Expertise",
       "Integration with Other Data Sources"
@@ -1079,8 +1047,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "39",
@@ -1094,10 +1062,9 @@
     "engagement_status": "active",
     "capabilities": [
       "Data Usability & Access",
-      "Research",
+      "Stakeholders: Research",
       "Data Quality & Governance",
-      "Data Tools, Products & Models",
-      "Other Fed Data (Social, Economic, Health)"
+      "Data Tools, Products & Models"
     ],
     "dataset_domains": [
       "Socioeconomic",
@@ -1109,8 +1076,8 @@
     "contact_email": "comments@urban.org",
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "40",
@@ -1126,7 +1093,8 @@
     "capabilities": [
       "Data Usability & Access",
       "Innovation",
-      "Research",
+      "Stakeholders: Research",
+      "Stakeholders: Private Sector",
       "Domain & Data Expertise",
       "Data Quality & Governance",
       "Data Tools, Products & Models"
@@ -1141,8 +1109,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "41",
@@ -1157,11 +1125,11 @@
     "engagement_status": "in_contact",
     "capabilities": [
       "Prioritizing Data",
-      "Research",
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research",
       "Domain & Data Expertise",
       "Data Quality & Governance",
       "Coordination",
-      "Distributed Governance & Collaboration",
       "Advocacy & Lobbying"
     ],
     "dataset_domains": [
@@ -1175,8 +1143,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "42",
@@ -1190,6 +1158,8 @@
     "engagement_status": "in_contact",
     "capabilities": [
       "Data Usability & Access",
+      "Stakeholders: Research",
+      "Stakeholders: Private Sector",
       "Data Tools, Products & Models",
       "Integration with Other Data Sources"
     ],
@@ -1204,8 +1174,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "43",
@@ -1220,8 +1190,8 @@
     "engagement_status": "in_contact",
     "capabilities": [
       "Data Usability & Access",
-      "Community Use",
-      "Research",
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research",
       "Domain & Data Expertise",
       "Data Tools, Products & Models"
     ],
@@ -1235,8 +1205,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "44",
@@ -1252,7 +1222,7 @@
     "capabilities": [
       "Data Usability & Access",
       "Prioritizing Data",
-      "Research",
+      "Stakeholders: Research",
       "Domain & Data Expertise",
       "Data Quality & Governance",
       "Coordination",
@@ -1269,8 +1239,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "45",
@@ -1285,9 +1255,9 @@
     "engagement_status": "in_contact",
     "capabilities": [
       "Data Usability & Access",
+      "Stakeholders: Research",
       "Data Quality & Governance",
-      "Coordination",
-      "Distributed Governance & Collaboration"
+      "Coordination"
     ],
     "dataset_domains": [
       "Climate & Earth Science",
@@ -1299,8 +1269,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "46",
@@ -1316,10 +1286,10 @@
     "capabilities": [
       "Data Usability & Access",
       "Prioritizing Data",
+      "Stakeholders: Community & Civic",
       "Domain & Data Expertise",
       "Data Quality & Governance",
       "Coordination",
-      "Distributed Governance & Collaboration",
       "Integration with Other Data Sources"
     ],
     "dataset_domains": [
@@ -1332,8 +1302,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "47",
@@ -1346,7 +1316,8 @@
     "organization_type": "nonprofit",
     "engagement_status": "in_contact",
     "capabilities": [
-      "Research",
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research",
       "Data Quality & Governance",
       "Advocacy & Lobbying"
     ],
@@ -1362,8 +1333,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "48",
@@ -1378,6 +1349,8 @@
     "capabilities": [
       "Data Usability & Access",
       "Innovation",
+      "Stakeholders: Research",
+      "Stakeholders: Private Sector",
       "Data Quality & Governance",
       "Data Tools, Products & Models",
       "Integration with Other Data Sources"
@@ -1392,8 +1365,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "49",
@@ -1408,6 +1381,8 @@
     "capabilities": [
       "Data Usability & Access",
       "Innovation",
+      "Stakeholders: Research",
+      "Stakeholders: Private Sector",
       "Data Tools, Products & Models",
       "Integration with Other Data Sources"
     ],
@@ -1422,8 +1397,8 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "50",
@@ -1438,7 +1413,9 @@
     "capabilities": [
       "Data Usability & Access",
       "Innovation",
-      "Community Use"
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Research",
+      "Stakeholders: Private Sector"
     ],
     "dataset_domains": [
       "Climate & Earth Science",
@@ -1451,8 +1428,8 @@
     "contact_email": "support@kaggle.com",
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   },
   {
     "id": "51",
@@ -1466,6 +1443,7 @@
     "engagement_status": "in_contact",
     "capabilities": [
       "Data Usability & Access",
+      "Stakeholders: Private Sector",
       "Domain & Data Expertise",
       "Advocacy & Lobbying"
     ],
@@ -1479,752 +1457,7 @@
     "contact_email": null,
     "logo_url": null,
     "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "52",
-    "name": "Archive Today",
-    "url": "https://archive.today",
-    "description": "Privately funded, on-demand web archiving service that saves snapshots of web pages (including JavaScript-heavy sites) as static copies.",
-    "sectors": [
-      "preservation_effort",
-      "data_platform",
-      "data_producer"
-    ],
-    "organization_type": "company",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Data Usability & Access",
-      "Data Tools, Products & Models"
-    ],
-    "dataset_domains": [
-      "Climate & Earth Science",
-      "Socioeconomic"
-    ],
-    "partners": [
-      "1"
-    ],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": "contact@archive.is",
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "53",
-    "name": "Civil Service Strong",
-    "url": "https://www.civilservicestrong.org",
-    "description": "Coalition initiative providing resources and support to defend, support, and rebuild a nonpartisan professional U.S. civil service.",
-    "sectors": [
-      "preservation_effort"
-    ],
-    "organization_type": "nonprofit",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Advocacy & Lobbying",
-      "Legal Protection & Litigation"
-    ],
-    "dataset_domains": [
-      "Socioeconomic"
-    ],
-    "partners": [],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": null,
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "54",
-    "name": "Climate Mirror / MIT Climate Lab",
-    "url": "http://climatemirror.org",
-    "description": "Climate Mirror is a volunteer effort to mirror and back up U.S. federal climate datasets and websites, storing redundant copies in many locations worldwide; the MIT Climate Lab reference relates to separate MIT projects that visualize climate risk but is not the operator of Climate Mirror.",
-    "sectors": [
-      "preservation_effort",
-      "academia_research"
-    ],
-    "organization_type": "nonprofit",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Data Usability & Access",
-      "Distributed Governance & Collaboration"
-    ],
-    "dataset_domains": [
-      "Climate & Earth Science",
-      "Greenhouse Gas & Emissions"
-    ],
-    "partners": [],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": null,
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "55",
-    "name": "Climate Program Portal",
-    "url": "https://climateprogramportal.org",
-    "description": "Online resource that tracks and synthesizes climate-related investments and funding opportunities under the Infrastructure Investment and Jobs Act and the Inflation Reduction Act, including dashboards and archives for program information.",
-    "sectors": [
-      "data_platform"
-    ],
-    "organization_type": "company",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Data Usability & Access",
-      "Community Use"
-    ],
-    "dataset_domains": [
-      "Climate & Earth Science",
-      "Energy",
-      "Greenhouse Gas & Emissions"
-    ],
-    "partners": [],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": null,
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "56",
-    "name": "Energy Information Administration",
-    "url": "www.eia.gov",
-    "description": "U.S. Department of Energy statistical agency that collects, analyzes, and disseminates official energy data and forecasts for policy, markets, and the public.",
-    "sectors": [
-      "data_platform",
-      "academia_research",
-      "data_producer"
-    ],
-    "organization_type": "government",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Data Usability & Access",
-      "Research",
-      "Domain & Data Expertise",
-      "Data Collection & Observing Systems",
-      "Data Tools, Products & Models"
-    ],
-    "dataset_domains": [
-      "Energy",
-      "Greenhouse Gas & Emissions"
-    ],
-    "partners": [],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": "infoctr@eia.gov",
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "57",
-    "name": "Environmental Protection Agency Enforcement Database Archive",
-    "url": "www.epa.gov",
-    "description": "EPA's enforcement and compliance data are made available through Enforcement and Compliance History Online (ECHO) and related online data sources, which provide historical enforcement, violations, and case data.",
-    "sectors": [
-      "data_platform",
-      "data_producer"
-    ],
-    "organization_type": "government",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Data Usability & Access",
-      "Data Collection & Observing Systems",
-      "Integration with Other Data Sources",
-      "Other Fed Data (Social, Economic, Health)"
-    ],
-    "dataset_domains": [
-      "Environmental Health & Justice",
-      "Climate & Earth Science"
-    ],
-    "partners": [],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": "OIG_WEBCOMMENTS@epa.gov",
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "58",
-    "name": "European Data Portal",
-    "url": "https://data.europa.eu",
-    "description": "Central portal providing access to open data from EU institutions and European national, regional, and local portals, operated by the Publications Office of the European Union.",
-    "sectors": [
-      "data_platform",
-      "data_producer"
-    ],
-    "organization_type": "government",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Data Usability & Access",
-      "Integration with Other Data Sources",
-      "Other Fed Data (Social, Economic, Health)"
-    ],
-    "dataset_domains": [
-      "Climate & Earth Science",
-      "Greenhouse Gas & Emissions",
-      "Socioeconomic"
-    ],
-    "partners": [],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": "opoce-info@publications.europa.eu",
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "59",
-    "name": "Federal Data Forum",
-    "url": "https://federaldataforum.prb.org",
-    "description": "Online hub and community that connects federal data users to share information about threats to U.S. federal statistics, coordinate advocacy, and access resources on federal data products.",
-    "sectors": [
-      "preservation_effort",
-      "data_platform"
-    ],
-    "organization_type": "nonprofit",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Data Usability & Access",
-      "Prioritizing Data",
-      "Data Quality & Governance",
-      "Coordination",
-      "Advocacy & Lobbying",
-      "Other Fed Data (Social, Economic, Health)"
-    ],
-    "dataset_domains": [
-      "Socioeconomic",
-      "Climate & Earth Science"
-    ],
-    "partners": [],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": null,
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "60",
-    "name": "Government Accountability Office Reports Archive",
-    "url": "www.gao.gov",
-    "description": "Collections that provide long-term access to GAO reports, testimonies, and Comptroller General decisions on federal programs and finances.",
-    "sectors": [
-      "data_platform",
-      "data_producer"
-    ],
-    "organization_type": "government",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Data Usability & Access",
-      "Other Fed Data (Social, Economic, Health)"
-    ],
-    "dataset_domains": [
-      "Socioeconomic"
-    ],
-    "partners": [],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": "youngc1@gao.gov.",
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "61",
-    "name": "ICPSR / DataLumos",
-    "url": "https://www.icpsr.umich.edu and https://www.icpsr.umich.edu/sites/datalumos",
-    "description": "An international consortium supporting data access, curation, and analysis in the social sciences. It enables community contributions of datasets, enhances discoverability through metadata, and provides preservation services, though capacity for very large datasets may be limited.",
-    "sectors": [
-      "data_platform"
-    ],
-    "organization_type": "academic",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Data Usability & Access",
-      "Data Quality & Governance",
-      "Other Fed Data (Social, Economic, Health)"
-    ],
-    "dataset_domains": [
-      "Socioeconomic"
-    ],
-    "partners": [],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": null,
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "62",
-    "name": "Massive Data Institute (Georgetown)",
-    "url": "https://mdi.georgetown.edu",
-    "description": "Interdisciplinary research center at Georgetown's McCourt School of Public Policy that uses modern computing and large-scale data (administrative, organic, survey, etc.) to answer public policy questions.",
-    "sectors": [
-      "academia_research"
-    ],
-    "organization_type": "academic",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Innovation",
-      "Research",
-      "Data Tools, Products & Models",
-      "Other Fed Data (Social, Economic, Health)"
-    ],
-    "dataset_domains": [
-      "Socioeconomic"
-    ],
-    "partners": [],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": null,
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "63",
-    "name": "National Oceanic and Atmospheric Administration",
-    "url": "https://www.noaa.gov",
-    "description": "U.S. federal science agency that monitors weather, oceans, atmosphere, and climate and manages marine resources, providing extensive environmental and climate data.",
-    "sectors": [
-      "data_platform",
-      "academia_research",
-      "data_producer"
-    ],
-    "organization_type": "government",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Data Usability & Access",
-      "Research",
-      "Domain & Data Expertise",
-      "Data Quality & Governance",
-      "Data Collection & Observing Systems",
-      "Data Tools, Products & Models"
-    ],
-    "dataset_domains": [
-      "Climate & Earth Science",
-      "Extreme Weather & Hazards",
-      "Geospatial & Remote Sensing"
-    ],
-    "partners": [],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": null,
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "64",
-    "name": "Open Energy Information",
-    "url": "https://openei.org",
-    "description": "U.S. Department of Energy supported open platform providing energy data, tools, and analyses for policymakers, researchers, and market participants.",
-    "sectors": [
-      "data_platform",
-      "data_producer"
-    ],
-    "organization_type": "government",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Data Usability & Access",
-      "Community Use",
-      "Data Tools, Products & Models",
-      "Integration with Other Data Sources"
-    ],
-    "dataset_domains": [
-      "Energy",
-      "Greenhouse Gas & Emissions"
-    ],
-    "partners": [],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": null,
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "65",
-    "name": "Open Government Canada",
-    "url": "https://open.canada.ca",
-    "description": "Government of Canada's open government and open data portal, providing access to federal datasets and information.",
-    "sectors": [
-      "data_platform",
-      "data_producer"
-    ],
-    "organization_type": "government",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Data Usability & Access",
-      "Integration with Other Data Sources",
-      "Other Fed Data (Social, Economic, Health)"
-    ],
-    "dataset_domains": [
-      "Climate & Earth Science",
-      "Greenhouse Gas & Emissions",
-      "Socioeconomic"
-    ],
-    "partners": [],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": "open-ouvert@tbs-sct.gc.ca.",
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "66",
-    "name": "Preservation of Electronic Government Information",
-    "url": "https://www.pegiproject.org",
-    "description": "Initiative to address national concerns about preserving at-risk electronic U.S. government information for long-term public use.",
-    "sectors": [
-      "preservation_effort",
-      "data_producer"
-    ],
-    "organization_type": "government",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Data Usability & Access",
-      "Data Quality & Governance",
-      "Coordination",
-      "Advocacy & Lobbying"
-    ],
-    "dataset_domains": [
-      "Climate & Earth Science",
-      "Socioeconomic"
-    ],
-    "partners": [],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": null,
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "67",
-    "name": "ProPublica",
-    "url": "www.propublica.org",
-    "description": "Investigative journalism nonprofit that also operates the ProPublica Data Store and APIs to share cleaned and structured datasets used in reporting.",
-    "sectors": [
-      "data_platform",
-      "academia_research",
-      "data_producer"
-    ],
-    "organization_type": "nonprofit",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Data Usability & Access",
-      "Community Use",
-      "Other Fed Data (Social, Economic, Health)"
-    ],
-    "dataset_domains": [
-      "Environmental Health & Justice",
-      "Socioeconomic"
-    ],
-    "partners": [
-      "74",
-      "50",
-      "5"
-    ],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": "datastore@propublica.org",
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "68",
-    "name": "Public Environmental Data Project",
-    "url": "https://screening-tools.com",
-    "description": "Volunteer coalition committed to preserving and providing public access to federal environmental data and screening tools.",
-    "sectors": [
-      "preservation_effort"
-    ],
-    "organization_type": "company",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Data Usability & Access",
-      "Community Use",
-      "Data Quality & Governance"
-    ],
-    "dataset_domains": [
-      "Climate & Earth Science",
-      "Environmental Health & Justice"
-    ],
-    "partners": [
-      "63",
-      "75",
-      "34",
-      "2"
-    ],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": null,
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "69",
-    "name": "Publications Office of the European Union.",
-    "url": "https://op.europa.eu",
-    "description": "Official EU interinstitutional office that publishes and provides access to EU law, publications, and data, including operating the EU's open data portal.",
-    "sectors": [
-      "data_platform",
-      "data_producer"
-    ],
-    "organization_type": "government",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Data Usability & Access",
-      "Integration with Other Data Sources",
-      "Other Fed Data (Social, Economic, Health)"
-    ],
-    "dataset_domains": [
-      "Climate & Earth Science",
-      "Greenhouse Gas & Emissions",
-      "Socioeconomic"
-    ],
-    "partners": [],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": "op-info@publications.europa.eu",
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "70",
-    "name": "Safeguarding Research and Culture",
-    "url": "https://safeguarding-research.discourse.group/about and https://forum.safeguar.de/",
-    "description": "Volunteer-driven initiative creating alternative, decentralized infrastructure to archive and disseminate cultural heritage and scientific knowledge, focusing on public data at risk of deletion or alteration.",
-    "sectors": [
-      "preservation_effort"
-    ],
-    "organization_type": "nonprofit",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Data Usability & Access",
-      "Data Quality & Governance",
-      "Distributed Governance & Collaboration"
-    ],
-    "dataset_domains": [
-      "Climate & Earth Science",
-      "Socioeconomic"
-    ],
-    "partners": [],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": null,
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "71",
-    "name": "Springshare",
-    "url": "https://springshare.com",
-    "description": "Ed-tech company providing library-focused, web-based applications (e.g., LibGuides) delivered as software-as-a-service.",
-    "sectors": [
-      "data_platform"
-    ],
-    "organization_type": "company",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Data Usability & Access",
-      "Data Tools, Products & Models"
-    ],
-    "dataset_domains": [
-      "Climate & Earth Science",
-      "Socioeconomic"
-    ],
-    "partners": [],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": null,
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "72",
-    "name": "Stanford's Big Local News",
-    "url": "http://cjlab.stanford.edu/projects/big-local-news/",
-    "description": "A data journalism and infrastructure initiative that aggregates, standardizes, and publishes datasets—particularly in sustainability and local reporting contexts. It emphasizes access, collaboration, and integration (e.g., with Data Commons) rather than primary preservation.",
-    "sectors": [
-      "academia_research"
-    ],
-    "organization_type": "academic",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Data Usability & Access",
-      "Community Use"
-    ],
-    "dataset_domains": [
-      "Socioeconomic",
-      "Climate & Earth Science"
-    ],
-    "partners": [
-      "67"
-    ],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": null,
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "73",
-    "name": "The Center for Open Data Enterprise",
-    "url": "https://www.opendataenterprise.org/",
-    "description": "501(c)(3) nonprofit that works with governments and organizations to use open and shared data for the public good, hosting roundtables and producing reports.",
-    "sectors": [
-      "academia_research"
-    ],
-    "organization_type": "nonprofit",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Data Usability & Access",
-      "Data Quality & Governance",
-      "Coordination",
-      "Advocacy & Lobbying"
-    ],
-    "dataset_domains": [
-      "Climate & Earth Science",
-      "Socioeconomic"
-    ],
-    "partners": [],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": "info@opendataenterprise.org",
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "74",
-    "name": "The World Bank",
-    "url": "https://data.worldbank.org and https://datacatalog.worldbank.org",
-    "description": "International financial institution that also provides extensive open access to development data through its Data Catalog and APIs.",
-    "sectors": [
-      "data_platform"
-    ],
-    "organization_type": "nonprofit",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Data Usability & Access",
-      "Integration with Other Data Sources",
-      "Other Fed Data (Social, Economic, Health)"
-    ],
-    "dataset_domains": [
-      "Climate & Earth Science",
-      "Greenhouse Gas & Emissions",
-      "Socioeconomic"
-    ],
-    "partners": [],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": "pubhelp@worldbank.org",
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "75",
-    "name": "United States Geological Survey",
-    "url": "www.usgs.gov",
-    "description": "U.S. federal science agency that studies landscapes, natural resources, and natural hazards and provides extensive geospatial and scientific data.",
-    "sectors": [
-      "data_platform",
-      "data_producer"
-    ],
-    "organization_type": "government",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Data Usability & Access",
-      "Research",
-      "Domain & Data Expertise",
-      "Data Collection & Observing Systems",
-      "Data Tools, Products & Models"
-    ],
-    "dataset_domains": [
-      "Climate & Earth Science",
-      "Geospatial & Remote Sensing"
-    ],
-    "partners": [],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": "ask@usgs.gov Phone: 1-888-ASK-USGS (1-888-275-8747)",
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
-  },
-  {
-    "id": "76",
-    "name": "USGEO",
-    "url": "https://www.usgeo.gov",
-    "description": "Federal interagency mechanism that coordinates U.S. civil Earth observation activities, improves Earth system data management and interoperability, and identifies high-priority uses for Earth observation data.",
-    "sectors": [
-      "data_producer",
-      "data_platform"
-    ],
-    "organization_type": "government",
-    "engagement_status": "deprioritized",
-    "capabilities": [
-      "Domain & Data Expertise",
-      "Data Quality & Governance",
-      "Coordination",
-      "Distributed Governance & Collaboration",
-      "Data Collection & Observing Systems",
-      "Integration with Other Data Sources"
-    ],
-    "dataset_domains": [
-      "Climate & Earth Science",
-      "Geospatial & Remote Sensing"
-    ],
-    "partners": [],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": null,
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-12T17:29:52.816Z",
-    "last_updated": "2026-05-12T17:29:52.816Z"
+    "created_at": "2026-05-15T20:24:59.627Z",
+    "last_updated": "2026-05-15T20:24:59.627Z"
   }
 ]
