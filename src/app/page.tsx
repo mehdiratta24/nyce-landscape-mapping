@@ -124,18 +124,13 @@ export default async function Home() {
 
       {/* SECTION 1 — STAKEHOLDERS */}
       <section className="max-w-7xl mx-auto px-6 py-20">
-        <div className="flex items-end justify-between mb-10 flex-wrap gap-6">
-          <div>
-            <p className="text-[11px] uppercase tracking-[0.22em] text-nyce-muted mb-3 font-semibold">
-              Stakeholders Mapped
-            </p>
-            <h2 className="font-display font-bold text-3xl md:text-4xl text-nyce-ink tracking-[-0.02em] max-w-2xl">
-              Each organization is tagged by the stakeholder groups.
-            </h2>
-          </div>
-          <p className="text-nyce-slate max-w-md text-sm leading-relaxed">
-            An organization may serve more than one group. Select a group to filter the directory.
+        <div className="mb-10">
+          <p className="text-[11px] uppercase tracking-[0.22em] text-nyce-muted mb-3 font-semibold">
+            Stakeholders Mapped
           </p>
+          <h2 className="font-display font-bold text-3xl md:text-4xl text-nyce-ink tracking-[-0.02em] max-w-3xl">
+            Each organization is tagged by the stakeholder groups.
+          </h2>
         </div>
         <p className="text-xs text-nyce-muted mb-3 italic">
           An organization may be tagged with more than one stakeholder group, so the counts below
