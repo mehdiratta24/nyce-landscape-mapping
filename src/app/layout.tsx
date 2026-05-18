@@ -17,9 +17,9 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Climate Data Landscape — The New York Climate Exchange",
+  title: "Climate Data Ecosystem Landscape — The New York Climate Exchange",
   description:
-    "A shared map of organizations preserving, rescuing, and stewarding public climate and environmental data. An initiative of The New York Climate Exchange.",
+    "A shared map of organizations preserving, rescuing, and stewarding climate data. An initiative of The New York Climate Exchange.",
 };
 
 export default async function RootLayout({
@@ -64,7 +64,7 @@ export default async function RootLayout({
             </div>
             <div className="md:text-right text-xs text-nyce-muted space-y-2">
               <p className="uppercase tracking-[0.2em] font-semibold">
-                Working document · v0.1 · read-only
+                v0.1 · confidential
               </p>
               <p>
                 <a
@@ -112,7 +112,7 @@ function Wordmark() {
         <span className="h-2 w-2 rounded-full bg-nyce-aqua" />
       </span>
       <span className="font-semibold tracking-tight text-[15px] leading-none">
-        Climate Data Landscape
+        Climate Data Ecosystem Landscape
       </span>
     </span>
   );

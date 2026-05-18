@@ -29,7 +29,7 @@ export default async function Home() {
     },
     {
       value: "Stakeholders: Research",
-      label: "Research",
+      label: "Scientific & Research",
       blurb:
         "Universities, scholarly societies, and repositories serving researchers, scientists, and the academic data community.",
       tone: "bg-sector-academia",
@@ -77,18 +77,25 @@ export default async function Home() {
                 <span className="h-1.5 w-1.5 rounded-full bg-nyce-accent" />
                 <span className="h-1.5 w-1.5 rounded-full bg-nyce-aqua" />
               </span>
-              Climate Data Stewardship · Working document · v0.1
+              Climate Data Stewardship Initiative · Landscape Mapping Tool · Confidential
             </div>
             <h1 className="font-display font-bold text-4xl md:text-6xl leading-[1.05] tracking-[-0.02em] text-nyce-ink text-balance">
-              A directory of organizations engaged in the preservation and stewardship of public climate data.
+              A directory of organizations engaged in the preservation and stewardship of climate data.
             </h1>
-            <p className="mt-8 text-base md:text-lg text-nyce-slate max-w-3xl leading-relaxed">
-              This directory catalogs {orgs.length} organizations active in the preservation,
-              redistribution, and analysis of federal climate and environmental datasets.
-              Organizations are tagged by capability, dataset domain, and the stakeholders they
-              serve to support coordination across preservation networks, data platforms, and
-              research institutions.
-            </p>
+            <div className="mt-8 space-y-4 max-w-3xl text-base md:text-lg text-nyce-slate leading-relaxed">
+              <p>
+                The Exchange, alongside key ecosystem partners, has mapped {orgs.length} data
+                preservation efforts across the ecosystem preservation groups, data platforms, and
+                academic institutions. These organizations are each playing distinct, complementary
+                roles: preserving and safeguarding datasets; improving metadata and cataloging;
+                developing open data governance models; and building scalable research
+                infrastructure.
+              </p>
+              <p>
+                Organizations are tagged by stakeholder type, their capabilities and their dataset
+                domains, across community & civic, scientific and research, and private sector.
+              </p>
+            </div>
             <div className="mt-10 flex flex-wrap gap-3">
               <Link
                 href="/directory"
@@ -120,17 +127,20 @@ export default async function Home() {
         <div className="flex items-end justify-between mb-10 flex-wrap gap-6">
           <div>
             <p className="text-[11px] uppercase tracking-[0.22em] text-nyce-muted mb-3 font-semibold">
-              Section 1 · Stakeholders served
+              Stakeholders Mapped
             </p>
             <h2 className="font-display font-bold text-3xl md:text-4xl text-nyce-ink tracking-[-0.02em] max-w-2xl">
-              Who these organizations work with.
+              Each organization is tagged by the stakeholder groups.
             </h2>
           </div>
           <p className="text-nyce-slate max-w-md text-sm leading-relaxed">
-            Each organization is tagged by the stakeholder groups it primarily serves. An
-            organization may serve more than one group. Select a group to filter the directory.
+            An organization may serve more than one group. Select a group to filter the directory.
           </p>
         </div>
+        <p className="text-xs text-nyce-muted mb-3 italic">
+          An organization may be tagged with more than one stakeholder group, so the counts below
+          add up to more than the {orgs.length} indexed organizations.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {stakeholderCounts.map((s, i) => (
             <Link
@@ -159,9 +169,6 @@ export default async function Home() {
                 <div className="text-right flex-shrink-0">
                   <div className="font-display font-bold text-5xl text-nyce-accent tabular-nums leading-none">
                     {s.n}
-                  </div>
-                  <div className="text-[10px] uppercase tracking-wider text-nyce-muted mt-1">
-                    n
                   </div>
                 </div>
               </div>
@@ -202,15 +209,15 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* COVERAGE MATRIX */}
-      <section className="bg-white border-y border-nyce-line">
+      {/* COVERAGE MATRIX — hidden on mobile */}
+      <section className="hidden md:block bg-white border-y border-nyce-line">
         <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-[1.1fr_1fr] gap-12 items-start">
           <div>
             <p className="text-[11px] uppercase tracking-[0.22em] text-nyce-muted mb-3 font-semibold">
-              Section 2 · Coverage matrix
+              Coverage matrix
             </p>
             <h2 className="font-display font-bold text-3xl md:text-4xl text-nyce-ink tracking-[-0.02em]">
-              Capability by dataset domain.
+              Mapping Capabilities and Dataset domains
             </h2>
             <p className="mt-5 text-nyce-slate text-base leading-relaxed max-w-xl">
               The matrix plots each capability against each dataset domain. Cell intensity
@@ -254,10 +261,10 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* VIEWING MODES */}
-      <section className="max-w-7xl mx-auto px-6 py-20">
+      {/* VIEWING MODES — hidden on mobile */}
+      <section className="hidden md:block max-w-7xl mx-auto px-6 py-20">
         <p className="text-[11px] uppercase tracking-[0.22em] text-nyce-muted mb-3 font-semibold">
-          Section 3 · Viewing modes
+          Using this tool
         </p>
         <h2 className="font-display font-bold text-3xl md:text-4xl text-nyce-ink tracking-[-0.02em] max-w-3xl">
           The directory is available in three views.
@@ -281,8 +288,8 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* METHODOLOGY NOTE */}
-      <section className="max-w-7xl mx-auto px-6 pb-20">
+      {/* METHODOLOGY NOTE — hidden on mobile */}
+      <section className="hidden md:block max-w-7xl mx-auto px-6 pb-20">
         <div className="rounded-2xl border border-nyce-line bg-white p-8 md:p-10">
           <p className="text-[11px] uppercase tracking-[0.22em] text-nyce-muted mb-3 font-semibold">
             Methodology note
@@ -291,12 +298,20 @@ export default async function Home() {
             About the data in this directory.
           </h2>
           <div className="grid md:grid-cols-2 gap-6 text-sm text-nyce-slate leading-relaxed">
-            <p>
-              Records are compiled from public documentation and NYCE engagement activity.
-              Capability and stakeholder tags reflect each organization's stated scope; coordination
-              relationships are extracted from prose descriptions where explicitly declared.
-              Duplicate entries have been merged.
-            </p>
+            <div className="space-y-3">
+              <p>
+                This information has been collected in partnership with organizations that the
+                New York Climate Exchange has engaged directly. The records are a combination of
+                information available online, in addition to stakeholder mapping exercises
+                conducted by the ecosystem as a whole. Organizations that have supported this
+                include: PEDP members, Data Foundation, and others.
+              </p>
+              <p>
+                Capability and stakeholder tags reflect each organization's stated scope;
+                coordination relationships are extracted from prose descriptions where explicitly
+                declared.
+              </p>
+            </div>
             <p>
               This directory is a working document. Proposed edits from external contributors
               enter a review queue moderated by the NYCE team. The collection will evolve as new
