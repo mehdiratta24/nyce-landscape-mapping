@@ -201,9 +201,9 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* COVERAGE MATRIX — hidden on mobile */}
-      <section className="hidden md:block bg-white border-y border-nyce-line">
-        <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-[1.1fr_1fr] gap-12 items-start">
+      {/* COVERAGE MATRIX */}
+      <section className="bg-white border-y border-nyce-line">
+        <div className="max-w-7xl mx-auto px-6 py-16 md:py-20 grid md:grid-cols-[1.1fr_1fr] gap-10 md:gap-12 items-start">
           <div>
             <p className="text-[11px] uppercase tracking-[0.22em] text-nyce-muted mb-3 font-semibold">
               Coverage matrix
@@ -225,8 +225,10 @@ export default async function Home() {
               <span aria-hidden>→</span>
             </Link>
           </div>
-          <figure className="rounded-2xl border border-nyce-line bg-nyce-paper p-6 md:p-8">
-            <OverlapMatrix orgs={orgs} interactive={false} />
+          <figure className="rounded-2xl border border-nyce-line bg-nyce-paper p-4 md:p-8 overflow-x-auto">
+            <div className="min-w-[520px] md:min-w-0">
+              <OverlapMatrix orgs={orgs} interactive={false} />
+            </div>
             <figcaption className="mt-4 text-xs text-nyce-muted leading-relaxed">
               <strong className="text-nyce-ink">Figure 1.</strong> Capability × dataset domain
               coverage, n = {orgs.length}. Values represent the count of organizations reporting
@@ -236,8 +238,8 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* USING THIS TOOL — methodology + viewing modes, hidden on mobile */}
-      <section className="hidden md:block max-w-7xl mx-auto px-6 py-20">
+      {/* USING THIS TOOL — methodology + viewing modes */}
+      <section className="max-w-7xl mx-auto px-6 py-16 md:py-20">
         <p className="text-[11px] uppercase tracking-[0.22em] text-nyce-muted mb-3 font-semibold">
           Using this tool
         </p>
@@ -271,7 +273,7 @@ export default async function Home() {
         <h3 className="mt-16 font-display font-bold text-2xl text-nyce-ink tracking-[-0.02em]">
           The directory is available in three views.
         </h3>
-        <div className="mt-6 grid md:grid-cols-3 gap-px bg-nyce-line border border-nyce-line rounded-xl overflow-hidden">
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-px bg-nyce-line border border-nyce-line rounded-xl overflow-hidden">
           <Guide
             title="Grid"
             body="Card layout listing each organization with type, capabilities, and last-updated timestamp. Default view."
