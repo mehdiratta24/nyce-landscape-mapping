@@ -236,64 +236,54 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* VIEWING MODES — hidden on mobile */}
+      {/* USING THIS TOOL — methodology + viewing modes, hidden on mobile */}
       <section className="hidden md:block max-w-7xl mx-auto px-6 py-20">
         <p className="text-[11px] uppercase tracking-[0.22em] text-nyce-muted mb-3 font-semibold">
           Using this tool
         </p>
         <h2 className="font-display font-bold text-3xl md:text-4xl text-nyce-ink tracking-[-0.02em] max-w-3xl">
-          The directory is available in three views.
+          About the data in this directory.
         </h2>
-        <div className="mt-12 grid md:grid-cols-3 gap-px bg-nyce-line border border-nyce-line rounded-xl overflow-hidden">
+
+        <div className="mt-8 grid md:grid-cols-2 gap-8 text-base text-nyce-slate leading-relaxed">
+          <div className="space-y-4">
+            <p>
+              This information has been collected in partnership with organizations that the
+              New York Climate Exchange has engaged directly. The records are a combination of
+              information available online, in addition to stakeholder mapping exercises
+              conducted by the ecosystem as a whole. Organizations that have supported this
+              include: PEDP members, Data Foundation, and others.
+            </p>
+            <p>
+              Capability and stakeholder tags reflect each organization's stated scope;
+              coordination relationships are extracted from prose descriptions where explicitly
+              declared.
+            </p>
+          </div>
+          <p>
+            This directory is a working document. Proposed edits from external contributors
+            enter a review queue moderated by the NYCE team. The collection will evolve as new
+            organizations are identified and existing entries are verified or updated.
+            Community contributions will be enabled in the next release.
+          </p>
+        </div>
+
+        <h3 className="mt-16 font-display font-bold text-2xl text-nyce-ink tracking-[-0.02em]">
+          The directory is available in three views.
+        </h3>
+        <div className="mt-6 grid md:grid-cols-3 gap-px bg-nyce-line border border-nyce-line rounded-xl overflow-hidden">
           <Guide
-            label="3.1"
             title="Grid"
             body="Card layout listing each organization with type, capabilities, and last-updated timestamp. Default view."
           />
           <Guide
-            label="3.2"
             title="Table"
             body="Tabular layout with columns sortable by name, type, capability count, domain list, coordination count, and recency."
           />
           <Guide
-            label="3.3"
             title="Coverage matrix"
             body="Capability × dataset domain heatmap. Respects all active filters. Cells are interactive and reveal the orgs at each intersection."
           />
-        </div>
-      </section>
-
-      {/* METHODOLOGY NOTE — hidden on mobile */}
-      <section className="hidden md:block max-w-7xl mx-auto px-6 pb-20">
-        <div className="rounded-2xl border border-nyce-line bg-white p-8 md:p-10">
-          <p className="text-[11px] uppercase tracking-[0.22em] text-nyce-muted mb-3 font-semibold">
-            Methodology note
-          </p>
-          <h2 className="font-display font-bold text-2xl text-nyce-ink tracking-[-0.02em] max-w-2xl mb-4">
-            About the data in this directory.
-          </h2>
-          <div className="grid md:grid-cols-2 gap-6 text-sm text-nyce-slate leading-relaxed">
-            <div className="space-y-3">
-              <p>
-                This information has been collected in partnership with organizations that the
-                New York Climate Exchange has engaged directly. The records are a combination of
-                information available online, in addition to stakeholder mapping exercises
-                conducted by the ecosystem as a whole. Organizations that have supported this
-                include: PEDP members, Data Foundation, and others.
-              </p>
-              <p>
-                Capability and stakeholder tags reflect each organization's stated scope;
-                coordination relationships are extracted from prose descriptions where explicitly
-                declared.
-              </p>
-            </div>
-            <p>
-              This directory is a working document. Proposed edits from external contributors
-              enter a review queue moderated by the NYCE team. The collection will evolve as new
-              organizations are identified and existing entries are verified or updated.
-              Community contributions will be enabled in the next release.
-            </p>
-          </div>
         </div>
       </section>
     </>
@@ -324,19 +314,14 @@ function Stat({
 }
 
 function Guide({
-  label,
   title,
   body,
 }: {
-  label: string;
   title: string;
   body: string;
 }) {
   return (
     <div className="bg-white p-8">
-      <div className="text-[11px] font-mono text-nyce-accent font-semibold mb-4 tabular-nums">
-        §{label}
-      </div>
       <h3 className="font-display font-semibold text-xl text-nyce-ink tracking-[-0.02em] mb-3">
         {title}
       </h3>
