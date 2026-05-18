@@ -11,9 +11,6 @@ import type { Capability } from "@/lib/types";
 export default async function Home() {
   const orgs = await getAllOrganizations();
 
-  const totalCapSlots = orgs.reduce((n, o) => n + o.capabilities.length, 0);
-  const totalDomainSlots = orgs.reduce((n, o) => n + o.dataset_domains.length, 0);
-
   const stakeholders: {
     value: Capability;
     label: string;
@@ -220,23 +217,6 @@ export default async function Home() {
               Empty cells indicate potential gaps in ecosystem coverage that may warrant further
               investigation.
             </p>
-            <dl className="mt-8 grid grid-cols-3 gap-6 text-sm">
-              <MiniStat
-                label="Capabilities tracked"
-                value={totalCapSlots}
-                sub={`mean ${(totalCapSlots / orgs.length).toFixed(1)} per org`}
-              />
-              <MiniStat
-                label="Domains tracked"
-                value={totalDomainSlots}
-                sub={`mean ${(totalDomainSlots / orgs.length).toFixed(1)} per org`}
-              />
-              <MiniStat
-                label="Possible pairings"
-                value={CAPABILITIES.length * DATASET_DOMAINS.length}
-                sub={`${CAPABILITIES.length} × ${DATASET_DOMAINS.length}`}
-              />
-            </dl>
             <Link
               href="/directory?view=overlap"
               className="mt-10 inline-flex items-center gap-2 text-sm font-semibold text-nyce-accent hover:text-nyce-accentDark transition-colors"
@@ -339,24 +319,6 @@ function Stat({
         {value}
       </div>
       <div className="text-[11px] uppercase tracking-wider text-nyce-muted mt-2">{label}</div>
-    </div>
-  );
-}
-
-function MiniStat({
-  label,
-  value,
-  sub,
-}: {
-  label: string;
-  value: number | string;
-  sub?: string;
-}) {
-  return (
-    <div>
-      <div className="font-display font-bold text-2xl text-nyce-ink tabular-nums">{value}</div>
-      <div className="text-[10px] uppercase tracking-wider text-nyce-muted mt-0.5">{label}</div>
-      {sub && <div className="text-[10px] text-nyce-muted/80 mt-0.5">{sub}</div>}
     </div>
   );
 }
