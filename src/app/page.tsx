@@ -18,8 +18,8 @@ export default async function Home() {
     tone: string;
   }[] = [
     {
-      value: "Stakeholders: Community & Civic",
-      label: "Community & Civic",
+      value: "Stakeholders: Public & Non Profit",
+      label: "Public & Non Profit",
       blurb:
         "Coalitions, public-access archives, and ad-hoc groups working with local communities, civil society, and the broader public.",
       tone: "bg-sector-preservation",
@@ -90,7 +90,7 @@ export default async function Home() {
               </p>
               <p>
                 Organizations are tagged by stakeholder type, their capabilities and their dataset
-                domains, across community & civic, scientific and research, and private sector.
+                domains, across public & non profit, scientific and research, and private sector.
               </p>
             </div>
             <div className="mt-10 flex flex-wrap gap-3">

@@ -38,7 +38,7 @@ const EDITS: Record<string, Edit> = {
     remove: ["Data Usability & Access", "Data Quality & Governance"],
   },
   "American Geophysical Union (AGU)": {
-    remove: ["Data Usability & Access", "Stakeholders: Community & Civic", "Advocacy & Lobbying"],
+    remove: ["Data Usability & Access", "Stakeholders: Public & Non Profit", "Advocacy & Lobbying"],
   },
   AWS: {
     remove: ["Data Tools, Products & Models", "Integration with Other Data Sources"],
@@ -46,7 +46,7 @@ const EDITS: Record<string, Edit> = {
   "Climate Central": { add: ["Stakeholders: Private Sector"] },
   "Climate READi": {
     remove: ["Data Usability & Access", "Prioritizing Data", "Data Quality & Governance"],
-    add: ["Stakeholders: Community & Civic"],
+    add: ["Stakeholders: Public & Non Profit"],
     removeDomains: ["Climate & Earth Science"],
   },
   "CODE (Center for Open Data Enterprise)": {
@@ -58,10 +58,10 @@ const EDITS: Record<string, Edit> = {
   },
   "Data Foundation - Climate Data Collaborative": {
     remove: ["Stakeholders: Research"],
-    add: ["Stakeholders: Community & Civic", "Stakeholders: Private Sector"],
+    add: ["Stakeholders: Public & Non Profit", "Stakeholders: Private Sector"],
   },
   "Data Liberation Project": { remove: ["Advocacy & Lobbying"] },
-  Dryad: { remove: ["Stakeholders: Community & Civic"] },
+  Dryad: { remove: ["Stakeholders: Public & Non Profit"] },
   "Earth Science Information Partners (ESIP)": { add: ["Stakeholders: Research"] },
   "Environmental Data & Governance Initiative (EDGI)": {
     add: ["Data Usability & Access", "Coordination"],
@@ -72,10 +72,10 @@ const EDITS: Record<string, Edit> = {
     remove: ["Data Quality & Governance"],
     add: ["Innovation", "Domain & Data Expertise"],
   },
-  ESRI: { add: ["Stakeholders: Community & Civic"] },
+  ESRI: { add: ["Stakeholders: Public & Non Profit"] },
   "FracTracker (Federal Accountability)": { remove: ["Data Quality & Governance"] },
   Google: {
-    add: ["Stakeholders: Community & Civic"],
+    add: ["Stakeholders: Public & Non Profit"],
     addDomains: ["Extreme Weather & Hazards"],
     description:
       "Private-sector technology company and cloud provider that hosts public-sector and government data infrastructure as well as its own public-facing data products using this data.",
@@ -123,7 +123,7 @@ const EDITS: Record<string, Edit> = {
   },
   "Urban Institute": {
     remove: ["Data Usability & Access", "Data Quality & Governance"],
-    add: ["Domain & Data Expertise", "Coordination", "Stakeholders: Community & Civic"],
+    add: ["Domain & Data Expertise", "Coordination", "Stakeholders: Public & Non Profit"],
   },
   "UW Climate Risk Lab": {
     remove: ["Data Usability & Access", "Data Quality & Governance"],

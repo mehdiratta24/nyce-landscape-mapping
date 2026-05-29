@@ -18,7 +18,7 @@ export type Capability =
   | "Data Usability & Access"
   | "Prioritizing Data"
   | "Innovation"
-  | "Stakeholders: Community & Civic"
+  | "Stakeholders: Public & Non Profit"
   | "Stakeholders: Research"
   | "Stakeholders: Private Sector"
   | "Alternative, Proxy Datasets"
