@@ -87,6 +87,7 @@ export const ENGAGEMENT_STATUSES: { value: EngagementStatus; label: string }[] =
 ];
 
 export const CAPABILITIES: Capability[] = [
+  "Data Platform",
   "Data Usability & Access",
   "Prioritizing Data",
   "Innovation",
@@ -105,6 +106,7 @@ export const CAPABILITIES: Capability[] = [
 ];
 
 export const CAPABILITY_SHORT: Record<Capability, string> = {
+  "Data Platform": "Platform",
   "Data Usability & Access": "Access",
   "Prioritizing Data": "Prioritize",
   Innovation: "Innovate",

@@ -12,6 +12,7 @@
     "organization_type": "academic",
     "engagement_status": "active",
     "capabilities": [
+      "Data Platform",
       "Data Usability & Access",
       "Stakeholders: Community & Civic",
       "Stakeholders: Research",
@@ -46,15 +47,14 @@
       "Stakeholders: Research",
       "Data Quality & Governance",
       "Advocacy & Lobbying",
-      "Legal Protection & Litigation"
+      "Data Usability & Access",
+      "Coordination"
     ],
     "dataset_domains": [
       "Environmental Health & Justice",
       "Climate & Earth Science"
     ],
-    "partners": [
-      "26"
-    ],
+    "partners": [],
     "datasets_of_focus": [],
     "contact_name": "Gretchen Gerhke",
     "contact_email": null,
@@ -74,6 +74,7 @@
     "organization_type": "academic",
     "engagement_status": "active",
     "capabilities": [
+      "Data Platform",
       "Data Usability & Access",
       "Stakeholders: Community & Civic",
       "Stakeholders: Research",
@@ -82,9 +83,7 @@
     "dataset_domains": [
       "Socioeconomic"
     ],
-    "partners": [
-      "2"
-    ],
+    "partners": [],
     "datasets_of_focus": [],
     "contact_name": null,
     "contact_email": null,
@@ -105,6 +104,7 @@
     "organization_type": "academic",
     "engagement_status": "active",
     "capabilities": [
+      "Data Platform",
       "Data Usability & Access",
       "Stakeholders: Research",
       "Integration with Other Data Sources"
@@ -132,8 +132,8 @@
     "organization_type": "nonprofit",
     "engagement_status": "active",
     "capabilities": [
+      "Data Platform",
       "Data Usability & Access",
-      "Stakeholders: Community & Civic",
       "Stakeholders: Research",
       "Data Quality & Governance"
     ],
@@ -160,8 +160,7 @@
     "organization_type": "nonprofit",
     "engagement_status": "active",
     "capabilities": [
-      "Data Usability & Access",
-      "Innovation",
+      "Data Platform",
       "Stakeholders: Community & Civic",
       "Stakeholders: Research",
       "Data Tools, Products & Models"
@@ -189,20 +188,15 @@
     "organization_type": "nonprofit",
     "engagement_status": "active",
     "capabilities": [
-      "Data Usability & Access",
       "Prioritizing Data",
       "Stakeholders: Community & Civic",
-      "Data Quality & Governance",
       "Advocacy & Lobbying"
     ],
     "dataset_domains": [
       "Climate & Earth Science",
       "Socioeconomic"
     ],
-    "partners": [
-      "26",
-      "30"
-    ],
+    "partners": [],
     "datasets_of_focus": [],
     "contact_name": null,
     "contact_email": null,
@@ -222,9 +216,9 @@
     "organization_type": "nonprofit",
     "engagement_status": "active",
     "capabilities": [
-      "Data Usability & Access",
       "Stakeholders: Community & Civic",
-      "Stakeholders: Research"
+      "Stakeholders: Research",
+      "Domain & Data Expertise"
     ],
     "dataset_domains": [
       "Climate & Earth Science",
@@ -251,8 +245,7 @@
     "engagement_status": "active",
     "capabilities": [
       "Data Usability & Access",
-      "Stakeholders: Community & Civic",
-      "Advocacy & Lobbying"
+      "Stakeholders: Community & Civic"
     ],
     "dataset_domains": [
       "Climate & Earth Science",
@@ -278,10 +271,8 @@
     "organization_type": "academic",
     "engagement_status": "active",
     "capabilities": [
-      "Prioritizing Data",
       "Stakeholders: Community & Civic",
       "Stakeholders: Research",
-      "Data Quality & Governance",
       "Advocacy & Lobbying",
       "Legal Protection & Litigation"
     ],
@@ -309,10 +300,10 @@
     "organization_type": "nonprofit",
     "engagement_status": "active",
     "capabilities": [
-      "Data Usability & Access",
       "Stakeholders: Community & Civic",
       "Stakeholders: Research",
-      "Legal Protection & Litigation"
+      "Legal Protection & Litigation",
+      "Domain & Data Expertise"
     ],
     "dataset_domains": [
       "Environmental Health & Justice",
@@ -339,26 +330,17 @@
     "organization_type": "nonprofit",
     "engagement_status": "active",
     "capabilities": [
-      "Data Usability & Access",
       "Prioritizing Data",
-      "Stakeholders: Community & Civic",
       "Stakeholders: Research",
       "Domain & Data Expertise",
       "Data Quality & Governance",
-      "Coordination",
-      "Advocacy & Lobbying"
+      "Coordination"
     ],
     "dataset_domains": [
       "Climate & Earth Science",
       "Greenhouse Gas & Emissions"
     ],
-    "partners": [
-      "18",
-      "19",
-      "32",
-      "25",
-      "26"
-    ],
+    "partners": [],
     "datasets_of_focus": [],
     "contact_name": "Shelley Stall",
     "contact_email": "SStall@agu.org",
@@ -389,11 +371,7 @@
     "dataset_domains": [
       "Climate & Earth Science"
     ],
-    "partners": [
-      "32",
-      "25",
-      "26"
-    ],
+    "partners": [],
     "datasets_of_focus": [],
     "contact_name": "Kate Wing",
     "contact_email": "kate@intertidal.agency",
@@ -415,26 +393,18 @@
     "capabilities": [
       "Data Usability & Access",
       "Prioritizing Data",
-      "Stakeholders: Research",
       "Domain & Data Expertise",
       "Data Quality & Governance",
       "Coordination",
-      "Integration with Other Data Sources"
+      "Integration with Other Data Sources",
+      "Stakeholders: Community & Civic",
+      "Stakeholders: Private Sector"
     ],
     "dataset_domains": [
       "Climate & Earth Science",
       "Greenhouse Gas & Emissions"
     ],
-    "partners": [
-      "16",
-      "22",
-      "19",
-      "20",
-      "32",
-      "25",
-      "26",
-      "30"
-    ],
+    "partners": [],
     "datasets_of_focus": [],
     "contact_name": "Sonia Wang",
     "contact_email": "sonia.wang@datafoundation.org",
@@ -454,7 +424,6 @@
     "organization_type": "company",
     "engagement_status": "active",
     "capabilities": [
-      "Data Usability & Access",
       "Prioritizing Data",
       "Stakeholders: Community & Civic",
       "Stakeholders: Research",
@@ -466,13 +435,7 @@
     "dataset_domains": [
       "Climate & Earth Science"
     ],
-    "partners": [
-      "16",
-      "18",
-      "20",
-      "32",
-      "25"
-    ],
+    "partners": [],
     "datasets_of_focus": [],
     "contact_name": "Tom Karl",
     "contact_email": "thomas.karl@spglobal.com",
@@ -492,7 +455,6 @@
     "organization_type": "nonprofit",
     "engagement_status": "active",
     "capabilities": [
-      "Data Usability & Access",
       "Prioritizing Data",
       "Stakeholders: Research",
       "Domain & Data Expertise",
@@ -503,12 +465,7 @@
     "dataset_domains": [
       "Climate & Earth Science"
     ],
-    "partners": [
-      "18",
-      "19",
-      "32",
-      "25"
-    ],
+    "partners": [],
     "datasets_of_focus": [],
     "contact_name": "Ralph Keeling",
     "contact_email": "ralph@keelingcurve.org",
@@ -529,21 +486,20 @@
     "organization_type": "academic",
     "engagement_status": "active",
     "capabilities": [
+      "Data Platform",
       "Data Usability & Access",
       "Stakeholders: Research",
       "Stakeholders: Private Sector",
       "Alternative, Proxy Datasets",
       "Domain & Data Expertise",
-      "Data Quality & Governance",
-      "Integration with Other Data Sources"
+      "Integration with Other Data Sources",
+      "Data Tools, Products & Models"
     ],
     "dataset_domains": [
       "Greenhouse Gas & Emissions",
       "Energy"
     ],
-    "partners": [
-      "18"
-    ],
+    "partners": [],
     "datasets_of_focus": [],
     "contact_name": "Dr. Wesley Ingwersen",
     "contact_email": "ingwersw@stanford.edu",
@@ -566,7 +522,6 @@
     "capabilities": [
       "Data Usability & Access",
       "Stakeholders: Community & Civic",
-      "Data Quality & Governance",
       "Advocacy & Lobbying",
       "Data Tools, Products & Models"
     ],
@@ -574,9 +529,7 @@
       "Environmental Health & Justice",
       "Climate & Earth Science"
     ],
-    "partners": [
-      "26"
-    ],
+    "partners": [],
     "datasets_of_focus": [],
     "contact_name": "Shannon Smith",
     "contact_email": "smith@fractracker.org",
@@ -603,18 +556,13 @@
       "Stakeholders: Research",
       "Domain & Data Expertise",
       "Data Quality & Governance",
-      "Coordination"
+      "Coordination",
+      "Stakeholders: Private Sector"
     ],
     "dataset_domains": [
       "Climate & Earth Science"
     ],
-    "partners": [
-      "16",
-      "18",
-      "20",
-      "19",
-      "30"
-    ],
+    "partners": [],
     "datasets_of_focus": [],
     "contact_name": "Andel Koester",
     "contact_email": "akoester@nyclimateexchange.org",
@@ -640,20 +588,14 @@
       "Stakeholders: Research",
       "Data Quality & Governance",
       "Coordination",
-      "Advocacy & Lobbying"
+      "Advocacy & Lobbying",
+      "Data Tools, Products & Models"
     ],
     "dataset_domains": [
       "Climate & Earth Science",
       "Environmental Health & Justice"
     ],
-    "partners": [
-      "16",
-      "18",
-      "32",
-      "25",
-      "28",
-      "30"
-    ],
+    "partners": [],
     "datasets_of_focus": [],
     "contact_name": "Brittany Janis",
     "contact_email": "brittany@openenvironmentaldata.org",
@@ -684,10 +626,7 @@
       "Climate & Earth Science",
       "Socioeconomic"
     ],
-    "partners": [
-      "16",
-      "26"
-    ],
+    "partners": [],
     "datasets_of_focus": [],
     "contact_name": "Lynda Kellam",
     "contact_email": "lyndamk@gmail.com",
@@ -707,6 +646,7 @@
     "organization_type": "nonprofit",
     "engagement_status": "active",
     "capabilities": [
+      "Data Platform",
       "Data Usability & Access",
       "Stakeholders: Community & Civic",
       "Stakeholders: Research"
@@ -714,9 +654,7 @@
     "dataset_domains": [
       "Climate & Earth Science"
     ],
-    "partners": [
-      "26"
-    ],
+    "partners": [],
     "datasets_of_focus": [],
     "contact_name": "Rebecca Lindsey",
     "contact_email": "rlindsey@climate.us",
@@ -736,21 +674,15 @@
     "organization_type": "nonprofit",
     "engagement_status": "active",
     "capabilities": [
-      "Data Usability & Access",
       "Stakeholders: Community & Civic",
       "Stakeholders: Research",
-      "Data Quality & Governance",
-      "Coordination",
-      "Advocacy & Lobbying"
+      "Coordination"
     ],
     "dataset_domains": [
       "Climate & Earth Science",
       "Socioeconomic"
     ],
-    "partners": [
-      "26",
-      "30"
-    ],
+    "partners": [],
     "datasets_of_focus": [],
     "contact_name": "Joel Gurin",
     "contact_email": "joel@odenterprise.org",
@@ -771,23 +703,17 @@
     "organization_type": "nonprofit",
     "engagement_status": "active",
     "capabilities": [
-      "Data Usability & Access",
       "Stakeholders: Community & Civic",
       "Stakeholders: Research",
-      "Alternative, Proxy Datasets",
-      "Data Tools, Products & Models",
-      "Integration with Other Data Sources"
+      "Prioritizing Data",
+      "Advocacy & Lobbying",
+      "Legal Protection & Litigation"
     ],
     "dataset_domains": [
       "Socioeconomic",
       "Climate & Earth Science"
     ],
-    "partners": [
-      "18",
-      "32",
-      "25",
-      "26"
-    ],
+    "partners": [],
     "datasets_of_focus": [],
     "contact_name": "Abby Andre",
     "contact_email": "abby@theimpactproject.org",
@@ -808,8 +734,8 @@
     "organization_type": "academic",
     "engagement_status": "active",
     "capabilities": [
+      "Data Platform",
       "Data Usability & Access",
-      "Innovation",
       "Stakeholders: Community & Civic",
       "Stakeholders: Research",
       "Data Quality & Governance",
@@ -819,9 +745,7 @@
       "Climate & Earth Science",
       "Socioeconomic"
     ],
-    "partners": [
-      "36"
-    ],
+    "partners": [],
     "datasets_of_focus": [],
     "contact_name": null,
     "contact_email": null,
@@ -841,7 +765,6 @@
     "organization_type": "nonprofit",
     "engagement_status": "active",
     "capabilities": [
-      "Prioritizing Data",
       "Stakeholders: Research",
       "Domain & Data Expertise",
       "Data Quality & Governance",
@@ -851,14 +774,7 @@
       "Climate & Earth Science",
       "Geospatial & Remote Sensing"
     ],
-    "partners": [
-      "16",
-      "18",
-      "19",
-      "20",
-      "25",
-      "26"
-    ],
+    "partners": [],
     "datasets_of_focus": [],
     "contact_name": "Steven Stichter",
     "contact_email": "SStichter@nas.edu",
@@ -911,18 +827,18 @@
       "Data Usability & Access",
       "Prioritizing Data",
       "Stakeholders: Community & Civic",
-      "Alternative, Proxy Datasets",
       "Data Quality & Governance",
-      "Advocacy & Lobbying"
+      "Advocacy & Lobbying",
+      "Stakeholders: Research",
+      "Coordination",
+      "Data Tools, Products & Models",
+      "Integration with Other Data Sources"
     ],
     "dataset_domains": [
       "Climate & Earth Science",
       "Environmental Health & Justice"
     ],
-    "partners": [
-      "2",
-      "26"
-    ],
+    "partners": [],
     "datasets_of_focus": [],
     "contact_name": null,
     "contact_email": null,
@@ -942,9 +858,9 @@
     "organization_type": "academic",
     "engagement_status": "active",
     "capabilities": [
+      "Data Platform",
       "Data Usability & Access",
       "Stakeholders: Research",
-      "Domain & Data Expertise",
       "Data Quality & Governance"
     ],
     "dataset_domains": [
@@ -972,6 +888,7 @@
     "organization_type": "nonprofit",
     "engagement_status": "active",
     "capabilities": [
+      "Data Platform",
       "Data Usability & Access",
       "Stakeholders: Community & Civic",
       "Stakeholders: Research",
@@ -1001,6 +918,7 @@
     "organization_type": "academic",
     "engagement_status": "active",
     "capabilities": [
+      "Data Platform",
       "Data Usability & Access",
       "Stakeholders: Research",
       "Integration with Other Data Sources"
@@ -1008,38 +926,6 @@
     "dataset_domains": [
       "Climate & Earth Science",
       "Socioeconomic"
-    ],
-    "partners": [],
-    "datasets_of_focus": [],
-    "contact_name": null,
-    "contact_email": null,
-    "logo_url": null,
-    "is_verified": false,
-    "created_at": "2026-05-15T20:24:59.627Z",
-    "last_updated": "2026-05-15T20:24:59.627Z"
-  },
-  {
-    "id": "38",
-    "name": "Stanford WaterShed",
-    "url": "https://suwater.stanford.edu/stormwater/watershed-protection and https://watershed.com/blog/cornerstone",
-    "description": "Initiative in partnership with Stanford Sustainable Solutions Lab. 'Cornerstone' hub for open access to US USEIO model, EPA carbon accounting model, and Watershed's global carbon accounting model (CEDA).",
-    "sectors": [
-      "academia_research",
-      "data_platform"
-    ],
-    "organization_type": "academic",
-    "engagement_status": "active",
-    "capabilities": [
-      "Data Usability & Access",
-      "Stakeholders: Community & Civic",
-      "Stakeholders: Research",
-      "Alternative, Proxy Datasets",
-      "Domain & Data Expertise",
-      "Integration with Other Data Sources"
-    ],
-    "dataset_domains": [
-      "Greenhouse Gas & Emissions",
-      "Energy"
     ],
     "partners": [],
     "datasets_of_focus": [],
@@ -1061,10 +947,11 @@
     "organization_type": "nonprofit",
     "engagement_status": "active",
     "capabilities": [
-      "Data Usability & Access",
       "Stakeholders: Research",
-      "Data Quality & Governance",
-      "Data Tools, Products & Models"
+      "Data Tools, Products & Models",
+      "Domain & Data Expertise",
+      "Coordination",
+      "Stakeholders: Community & Civic"
     ],
     "dataset_domains": [
       "Socioeconomic",
@@ -1091,12 +978,11 @@
     "organization_type": "academic",
     "engagement_status": "active",
     "capabilities": [
-      "Data Usability & Access",
+      "Data Platform",
       "Innovation",
       "Stakeholders: Research",
       "Stakeholders: Private Sector",
       "Domain & Data Expertise",
-      "Data Quality & Governance",
       "Data Tools, Products & Models"
     ],
     "dataset_domains": [
@@ -1124,13 +1010,10 @@
     "organization_type": "nonprofit",
     "engagement_status": "in_contact",
     "capabilities": [
-      "Prioritizing Data",
       "Stakeholders: Community & Civic",
       "Stakeholders: Research",
       "Domain & Data Expertise",
-      "Data Quality & Governance",
-      "Coordination",
-      "Advocacy & Lobbying"
+      "Coordination"
     ],
     "dataset_domains": [
       "Climate & Earth Science",
@@ -1157,11 +1040,10 @@
     "organization_type": "company",
     "engagement_status": "in_contact",
     "capabilities": [
+      "Data Platform",
       "Data Usability & Access",
       "Stakeholders: Research",
-      "Stakeholders: Private Sector",
-      "Data Tools, Products & Models",
-      "Integration with Other Data Sources"
+      "Stakeholders: Private Sector"
     ],
     "dataset_domains": [
       "Climate & Earth Science",
@@ -1189,11 +1071,13 @@
     "organization_type": "nonprofit",
     "engagement_status": "in_contact",
     "capabilities": [
+      "Data Platform",
       "Data Usability & Access",
       "Stakeholders: Community & Civic",
       "Stakeholders: Research",
       "Domain & Data Expertise",
-      "Data Tools, Products & Models"
+      "Data Tools, Products & Models",
+      "Stakeholders: Private Sector"
     ],
     "dataset_domains": [
       "Climate & Earth Science",
@@ -1220,16 +1104,14 @@
     "organization_type": "nonprofit",
     "engagement_status": "in_contact",
     "capabilities": [
-      "Data Usability & Access",
-      "Prioritizing Data",
+      "Data Platform",
       "Stakeholders: Research",
       "Domain & Data Expertise",
-      "Data Quality & Governance",
       "Coordination",
-      "Data Tools, Products & Models"
+      "Data Tools, Products & Models",
+      "Stakeholders: Community & Civic"
     ],
     "dataset_domains": [
-      "Climate & Earth Science",
       "Energy",
       "Extreme Weather & Hazards"
     ],
@@ -1284,13 +1166,15 @@
     "organization_type": "nonprofit",
     "engagement_status": "in_contact",
     "capabilities": [
+      "Data Platform",
       "Data Usability & Access",
       "Prioritizing Data",
       "Stakeholders: Community & Civic",
       "Domain & Data Expertise",
       "Data Quality & Governance",
       "Coordination",
-      "Integration with Other Data Sources"
+      "Integration with Other Data Sources",
+      "Stakeholders: Research"
     ],
     "dataset_domains": [
       "Climate & Earth Science",
@@ -1318,16 +1202,15 @@
     "capabilities": [
       "Stakeholders: Community & Civic",
       "Stakeholders: Research",
-      "Data Quality & Governance",
-      "Advocacy & Lobbying"
+      "Advocacy & Lobbying",
+      "Innovation",
+      "Domain & Data Expertise"
     ],
     "dataset_domains": [
       "Environmental Health & Justice",
       "Climate & Earth Science"
     ],
-    "partners": [
-      "26"
-    ],
+    "partners": [],
     "datasets_of_focus": [],
     "contact_name": null,
     "contact_email": null,
@@ -1347,13 +1230,15 @@
     "organization_type": "company",
     "engagement_status": "in_contact",
     "capabilities": [
+      "Data Platform",
       "Data Usability & Access",
       "Innovation",
       "Stakeholders: Research",
       "Stakeholders: Private Sector",
       "Data Quality & Governance",
       "Data Tools, Products & Models",
-      "Integration with Other Data Sources"
+      "Integration with Other Data Sources",
+      "Stakeholders: Community & Civic"
     ],
     "dataset_domains": [
       "Geospatial & Remote Sensing",
@@ -1372,24 +1257,27 @@
     "id": "49",
     "name": "Google",
     "url": "https://www.google.com",
-    "description": "Private-sector technology company and cloud provider that hosts public-sector and government data infrastructure.",
+    "description": "Private-sector technology company and cloud provider that hosts public-sector and government data infrastructure as well as its own public-facing data products using this data.",
     "sectors": [
       "data_platform"
     ],
     "organization_type": "company",
     "engagement_status": "in_contact",
     "capabilities": [
+      "Data Platform",
       "Data Usability & Access",
       "Innovation",
       "Stakeholders: Research",
       "Stakeholders: Private Sector",
       "Data Tools, Products & Models",
-      "Integration with Other Data Sources"
+      "Integration with Other Data Sources",
+      "Stakeholders: Community & Civic"
     ],
     "dataset_domains": [
       "Climate & Earth Science",
       "Greenhouse Gas & Emissions",
-      "Socioeconomic"
+      "Socioeconomic",
+      "Extreme Weather & Hazards"
     ],
     "partners": [],
     "datasets_of_focus": [],
@@ -1411,7 +1299,7 @@
     "organization_type": "company",
     "engagement_status": "in_contact",
     "capabilities": [
-      "Data Usability & Access",
+      "Data Platform",
       "Innovation",
       "Stakeholders: Community & Civic",
       "Stakeholders: Research",
@@ -1442,10 +1330,11 @@
     "organization_type": "nonprofit",
     "engagement_status": "in_contact",
     "capabilities": [
-      "Data Usability & Access",
+      "Data Platform",
       "Stakeholders: Private Sector",
       "Domain & Data Expertise",
-      "Advocacy & Lobbying"
+      "Advocacy & Lobbying",
+      "Prioritizing Data"
     ],
     "dataset_domains": [
       "Extreme Weather & Hazards",

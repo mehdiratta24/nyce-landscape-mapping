@@ -31,6 +31,7 @@ const OUT_PATH = path.join(ROOT, "data/organizations.json");
 
 // New controlled vocab (also exported below for constants.ts to mirror).
 const CAPABILITIES = [
+  "Data Platform",
   "Data Usability & Access",
   "Prioritizing Data",
   "Innovation",

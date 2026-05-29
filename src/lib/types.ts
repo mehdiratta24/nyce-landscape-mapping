@@ -14,6 +14,7 @@ export type OrganizationType =
 export type EngagementStatus = "active" | "in_contact" | "deprioritized";
 
 export type Capability =
+  | "Data Platform"
   | "Data Usability & Access"
   | "Prioritizing Data"
   | "Innovation"
